@@ -26,11 +26,13 @@
                       
                       @"Facebook",
                       @"Foursquare",
+                      @"Foxconn",
                       
                       @"Google",
                       
                       @"HP",
                       @"HTC",
+                      @"Huawei",
                       
                       @"IBM",
                       @"Intel",
@@ -54,7 +56,8 @@
                       @"Sprint",
                       @"Staples",
                       
-                      @"T-Mobile",
+                      @"T-Mobile USA",
+                      @"Tumblr",
                       @"Twitter",
                       
                       @"Uber",
@@ -116,6 +119,10 @@
         return [UIColor dk_colorWithHexString:@"#3b5998"];
     }
     
+    if ([brand isEqualToString:@"Foxconn"]) {
+        return [UIColor dk_colorWithRed:30 green:90 blue:160];
+    }
+    
     if ([brand isEqualToString:@"Foursquare"]) {
         return [UIColor dk_colorWithHexString:@"#0cbadf"];
     }
@@ -130,6 +137,14 @@
     
     if ([brand isEqualToString:@"HTC"]) {
         return [UIColor dk_colorWithRed:105 green:180 blue:15];
+    }
+
+    if ([brand isEqualToString:@"Huawei"]) {
+        return [UIColor dk_colorWithRed:214 green:45 blue:36];
+    }
+    
+    if ([brand isEqualToString:@"Foxconn"]) {
+        return [UIColor dk_colorWithRed:30 green:90 blue:160];
     }
     
     if ([brand isEqualToString:@"IBM"]) {
@@ -168,21 +183,17 @@
         return [UIColor dk_colorWithHexString:@"#3b7bbf"];
     }
     
-    
     if ([brand isEqualToString:@"Qualcomm"]) {
         return [UIColor dk_colorWithRed:27 green:32 blue:33];
     }
-    
     
     if ([brand isEqualToString:@"Samsung"]) {
         return [UIColor dk_colorWithHexString:@"#0c4da2"];
     }
     
-    
     if ([brand isEqualToString:@"Snapchat"]) {
         return [UIColor dk_colorWithRed:255 green:252 blue:0];
     }
-    
     
     if ([brand isEqualToString:@"Spotify"]) {
         return [UIColor dk_colorWithHexString:@"#81b71a"];
@@ -196,12 +207,16 @@
         return [UIColor dk_colorWithHexString:@"#cc0000"];
     }
     
-    if ([brand isEqualToString:@"T-Mobile"]) {
+    if ([brand isEqualToString:@"T-Mobile USA"]) {
         return [UIColor dk_colorWithHexString:@"#ea0a8e"];
     }
     
     if ([brand isEqualToString:@"Twitter"]) {
         return [UIColor dk_colorWithHexString:@"#55acee"];
+    }
+    
+    if ([brand isEqualToString:@"Tumblr"]) {
+        return [UIColor dk_colorWithHexString:@"#34526f"];
     }
     
     if ([brand isEqualToString:@"Uber"]) {
