@@ -45,6 +45,7 @@
                       @"Motorola",
                       
                       @"Netflix",
+                      @"Nokia",
                       
                       @"PayPal",
                       
@@ -177,6 +178,10 @@
     
     if ([brand isEqualToString:@"Netflix"]) {
         return [UIColor dk_colorWithHexString:@"#b9070a"];
+    }
+
+    if ([brand isEqualToString:@"Nokia"]) {
+        return [UIColor dk_colorWithHexString:@"#183693"];
     }
     
     if ([brand isEqualToString:@"PayPal"]) {
