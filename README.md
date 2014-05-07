@@ -27,10 +27,11 @@ BrandColors includes a sample project in the Demo folder.
 
 # List of Brands
 ```
-2014-05-06 09:34:06.453 Demo[99971:60b] BrandColors contains 39 brands:(
+2014-05-07 06:13:55.654 Demo[10071:60b] BrandColors contains 43 brands:(
     Alibaba,
     Amazon,
     AOL,
+    ARM,
     "AT&T",
     Dropbox,
     eBay,
@@ -49,9 +50,11 @@ BrandColors includes a sample project in the Demo folder.
     Microsoft,
     Motorola,
     Netflix,
+    Nintendo,
     Nokia,
     PayPal,
     Qualcomm,
+    Rovio,
     Samsung,
     Snapchat,
     Spotify,
@@ -64,6 +67,7 @@ BrandColors includes a sample project in the Demo folder.
     Verizon,
     Vimeo,
     Vine,
+    VSCO,
     Xiaomi,
     "Yahoo!",
     Yelp

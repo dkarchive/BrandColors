@@ -18,6 +18,7 @@
                       @"Alibaba",
                       @"Amazon",
                       @"AOL",
+                      @"ARM",
                       @"AT&T",
                       
                       @"Dropbox",
@@ -45,11 +46,14 @@
                       @"Motorola",
                       
                       @"Netflix",
+                      @"Nintendo",
                       @"Nokia",
                       
                       @"PayPal",
                       
                       @"Qualcomm",
+                      
+                      @"Rovio",
                       
                       @"Samsung",
                       @"Snapchat",
@@ -66,6 +70,7 @@
                       @"Verizon",
                       @"Vimeo",
                       @"Vine",
+                      @"VSCO",
                       
                       @"Xiaomi",
                       
@@ -91,6 +96,10 @@
     
     if ([brand isEqualToString:@"AOL"]) {
         return [UIColor dk_colorWithHexString:@"#00c4ff"];
+    }
+
+    if ([brand isEqualToString:@"ARM"]) {
+        return [UIColor dk_colorWithRed:0 green:132 blue:171];
     }
     
     if ([brand isEqualToString:@"AT&T"]) {
@@ -179,6 +188,10 @@
     if ([brand isEqualToString:@"Netflix"]) {
         return [UIColor dk_colorWithHexString:@"#b9070a"];
     }
+    
+    if ([brand isEqualToString:@"Nintendo"]) {
+        return [UIColor dk_colorWithRed:140 green:140 blue:140];
+    }
 
     if ([brand isEqualToString:@"Nokia"]) {
         return [UIColor dk_colorWithHexString:@"#183693"];
@@ -190,6 +203,10 @@
     
     if ([brand isEqualToString:@"Qualcomm"]) {
         return [UIColor dk_colorWithRed:27 green:32 blue:33];
+    }
+    
+    if ([brand isEqualToString:@"Rovio"]) {
+        return [UIColor dk_colorWithRed:192 green:34 blue:39];
     }
     
     if ([brand isEqualToString:@"Samsung"]) {
@@ -238,6 +255,10 @@
     
     if ([brand isEqualToString:@"Vine"]) {
         return [UIColor dk_colorWithHexString:@"#00a478"];
+    }
+    
+    if ([brand isEqualToString:@"VSCO"]) {
+        return [UIColor dk_colorWithRed:170 green:169 blue:76];
     }
     
     if ([brand isEqualToString:@"Xiaomi"]) {
