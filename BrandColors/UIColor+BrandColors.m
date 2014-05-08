@@ -16,6 +16,7 @@
 + (NSArray*)bc_brands {
     NSArray *list = @[
                       @"Alibaba",
+                      @"Adobe",
                       @"Amazon",
                       @"AOL",
                       @"ARM",
@@ -26,6 +27,7 @@
                       @"eBay",
                       
                       @"Facebook",
+                      @"Flipkart",
                       @"Foursquare",
                       @"Foxconn",
                       
@@ -59,6 +61,7 @@
                       @"Snapchat",
                       @"Spotify",
                       @"Sprint",
+                      @"SoftBank",
                       @"Staples",
                       
                       @"T-Mobile USA",
@@ -89,8 +92,11 @@
         return [UIColor dk_colorWithRed:255 green:115 blue:0];
     }
     
+    if ([brand isEqualToString:@"Adobe"]) {
+        return [UIColor dk_colorWithHexString:@"#ff0000"];
+    }
+
     if ([brand isEqualToString:@"Amazon"]) {
-        //NSLog(@"set amazon background");
         return [UIColor dk_colorWithHexString:@"#ff9900"];
     }
     
@@ -127,6 +133,10 @@
     
     if ([brand isEqualToString:@"Facebook"]) {
         return [UIColor dk_colorWithHexString:@"#3b5998"];
+    }
+    
+    if ([brand isEqualToString:@"Flipkart"]) {
+        return [UIColor dk_colorWithRed:0 green:83 blue:135];
     }
     
     if ([brand isEqualToString:@"Foxconn"]) {
@@ -223,6 +233,10 @@
     
     if ([brand isEqualToString:@"Sprint"]) {
         return [UIColor dk_colorWithHexString:@"#fee100"];
+    }
+    
+    if ([brand isEqualToString:@"SoftBank"]) {
+        return [UIColor dk_colorWithRed:186 green:188 blue:190];
     }
     
     if ([brand isEqualToString:@"Staples"]) {
