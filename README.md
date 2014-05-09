@@ -27,7 +27,7 @@ BrandColors includes a sample project in the Demo folder.
 
 # List of Brands
 ```
-2014-05-08 06:09:37.309 Demo[3340:60b] BrandColors contains 46 brands:(
+2014-05-09 06:49:15.084 Demo[6286:60b] BrandColors contains 48 brands:(
     Alibaba,
     Adobe,
     Amazon,
@@ -54,6 +54,7 @@ BrandColors includes a sample project in the Demo folder.
     Netflix,
     Nintendo,
     Nokia,
+    NVIDIA,
     PayPal,
     Qualcomm,
     Rovio,
@@ -73,7 +74,8 @@ BrandColors includes a sample project in the Demo folder.
     VSCO,
     Xiaomi,
     "Yahoo!",
-    Yelp
+    Yelp,
+    ZTE
 )
 ```
 

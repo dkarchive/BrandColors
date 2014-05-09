@@ -50,6 +50,7 @@
                       @"Netflix",
                       @"Nintendo",
                       @"Nokia",
+                      @"NVIDIA",
                       
                       @"PayPal",
                       
@@ -78,7 +79,9 @@
                       @"Xiaomi",
                       
                       @"Yahoo!",
-                      @"Yelp"
+                      @"Yelp",
+                      
+                      @"ZTE",
                       ];
     
     return list;
@@ -207,6 +210,10 @@
         return [UIColor dk_colorWithHexString:@"#183693"];
     }
     
+    if ([brand isEqualToString:@"NVIDIA"]) {
+        return [UIColor dk_colorWithRed:119 green:185 blue:0];
+    }
+    
     if ([brand isEqualToString:@"PayPal"]) {
         return [UIColor dk_colorWithHexString:@"#3b7bbf"];
     }
@@ -287,6 +294,10 @@
         return [UIColor dk_colorWithHexString:@"#c41200"];
     }
     
+    if ([brand isEqualToString:@"ZTE"]) {
+        return [UIColor dk_colorWithRed:10 green:80 blue:160];
+    }
+    
     return brandColor;
 }
 
@@ -294,7 +305,7 @@
 #pragma mark - Private
 
 + (UIColor*)dk_colorWithRed:(CGFloat)red green:(CGFloat)green blue:(CGFloat)blue {
-    return [UIColor colorWithRed:red/255 green:green/255 blue:blue/255 alpha:1];
+    return [UIColor colorWithRed:red/255.0f green:green/255.0f blue:blue/255.0f alpha:1.0f];
 }
 
 
