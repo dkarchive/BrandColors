@@ -19,9 +19,11 @@
                       @"Adobe",
                       @"Amazon",
                       @"AOL",
+                      @"Apple",
                       @"ARM",
                       @"AT&T",
                       
+                      @"Dish Network",
                       @"Dropbox",
                       
                       @"eBay",
@@ -98,6 +100,10 @@
     if ([brand isEqualToString:@"Adobe"]) {
         return [UIColor dk_colorWithHexString:@"#ff0000"];
     }
+    
+    if ([brand isEqualToString:@"Apple"]) {
+        return [UIColor dk_colorWithRed:119 green:119 blue:119];
+    }
 
     if ([brand isEqualToString:@"Amazon"]) {
         return [UIColor dk_colorWithHexString:@"#ff9900"];
@@ -115,6 +121,9 @@
         return [UIColor dk_colorWithRed:255 green:151 blue:0];
     }
     
+    if ([brand isEqualToString:@"Dish Network"]) {
+        return [UIColor dk_colorWithRed:218 green:18 blue:29];
+    }
     
     if ([brand isEqualToString:@"Dropbox"]) {
         return [UIColor dk_colorWithHexString:@"#007ee5"];

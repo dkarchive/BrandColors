@@ -28,12 +28,15 @@ BrandColors includes a sample project in the Demo folder.
 # List of Brands
 ```
 2014-05-09 06:49:15.084 Demo[6286:60b] BrandColors contains 48 brands:(
+   2014-05-12 08:58:40.499 Demo[44355:60b] BrandColors contains 50 brands:(
     Alibaba,
     Adobe,
     Amazon,
     AOL,
+    Apple,
     ARM,
     "AT&T",
+    "Dish Network",
     Dropbox,
     eBay,
     Facebook,
