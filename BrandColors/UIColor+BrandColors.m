@@ -17,6 +17,7 @@
     NSArray *list = @[
                       @"Alibaba",
                       @"Adobe",
+                      @"Airbnb",
                       @"Amazon",
                       @"AOL",
                       @"Apple",
@@ -27,6 +28,7 @@
                       @"Dropbox",
                       
                       @"eBay",
+                      @"Evernote",
                       
                       @"Facebook",
                       @"Flipkart",
@@ -78,6 +80,8 @@
                       @"Vine",
                       @"VSCO",
                       
+                      @"WhatsApp",
+                      
                       @"Xiaomi",
                       
                       @"Yahoo!",
@@ -99,6 +103,10 @@
     
     if ([brand isEqualToString:@"Adobe"]) {
         return [UIColor dk_colorWithHexString:@"#ff0000"];
+    }
+    
+    if ([brand isEqualToString:@"Airbnb"]) {
+        return [UIColor dk_colorWithRed:0 green:196 blue:255];
     }
     
     if ([brand isEqualToString:@"Apple"]) {
@@ -141,6 +149,10 @@
          return [UIColor dk_colorWithHexString: ebayColors[arc4random()%ebayColors.count] ];
          */
         return [UIColor dk_colorWithHexString:@"#e53238"];
+    }
+    
+    if ([brand isEqualToString:@"Evernote"]) {
+        return [UIColor dk_colorWithHexString:@"#7ac142"];
     }
     
     if ([brand isEqualToString:@"Facebook"]) {
@@ -289,6 +301,10 @@
     
     if ([brand isEqualToString:@"VSCO"]) {
         return [UIColor dk_colorWithRed:170 green:169 blue:76];
+    }
+
+    if ([brand isEqualToString:@"WhatsApp"]) {
+        return [UIColor dk_colorWithRed:52 green:175 blue:35];
     }
     
     if ([brand isEqualToString:@"Xiaomi"]) {
