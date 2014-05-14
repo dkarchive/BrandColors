@@ -26,6 +26,7 @@ If a brand is not in Brand Colors, the default color returned is `[UIColor clear
 
 ``` 
 UIColor *facebookColor;
+// facebook or Facebook will work
 facebookColor = [UIColor bc_colorForBrand:@"Facebook"]; 
 facebookColor = [UIColor bc_colorForBrand:@"facebook"]; 
 
@@ -40,7 +41,7 @@ BrandColors includes a sample project in the Demo folder.
 
 # List of Brands
 ```
-2014-05-14 07:06:52.362 Demo[18941:60b] BrandColors contains 53 brands:(
+2014-05-14 12:24:24.397 Demo[65974:60b] BrandColors contains 53 brands:(
     Alibaba,
     Adobe,
     Airbnb,
@@ -81,7 +82,7 @@ BrandColors includes a sample project in the Demo folder.
     Sprint,
     SoftBank,
     Staples,
-    "T-Mobile USA",
+    "T-Mobile",
     Tumblr,
     Twitter,
     Uber,
