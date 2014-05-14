@@ -10,7 +10,7 @@ UIColor Category for Brand Colors
 - `#import "UIColor+BrandColors.h"`
 
 # Usage
-``` objc
+``` 
 UIButton *facebookButton = [[UIButton alloc] init];
 facebookButton.backgroundColor = [UIColor bc_colorForBrand:@"Facebook"]; 
 
@@ -20,6 +20,19 @@ NSLog(@"BrandColors contains %@ brands:%@", @([UIColor bc_brands].count),[UIColo
 If a brand is not in Brand Colors, the default color returned is `[UIColor clearColor]`
 ```
 #define BC_DEFAULT_COLOR [UIColor clearColor]
+```
+
+`bc_colorForBrand:` attemps to match brands
+
+``` 
+UIColor *facebookColor;
+facebookColor = [UIColor bc_colorForBrand:@"Facebook"]; 
+facebookColor = [UIColor bc_colorForBrand:@"facebook"]; 
+
+UIColor *yahooColor;
+yahooColor = [UIColor bc_colorForBrand:@"yahoo"]; 
+yahooColor = [UIColor bc_colorForBrand:@"Yahoo"]; 
+yahooColor = [UIColor bc_colorForBrand:@"Yahoo!"]; 
 ```
 
 # Demo
