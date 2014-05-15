@@ -41,7 +41,7 @@ BrandColors includes a sample project in the Demo folder.
 
 # List of Brands
 ```
-2014-05-14 12:24:24.397 Demo[65974:60b] BrandColors contains 53 brands:(
+2014-05-15 13:34:35.017 Demo[11753:60b] BrandColors contains 55 brands:(
     Alibaba,
     Adobe,
     Airbnb,
@@ -69,6 +69,7 @@ BrandColors includes a sample project in the Demo folder.
     LINE,
     Microsoft,
     Motorola,
+    Mozilla,
     Netflix,
     Nintendo,
     Nokia,
@@ -77,6 +78,7 @@ BrandColors includes a sample project in the Demo folder.
     Qualcomm,
     Rovio,
     Samsung,
+    Shazam,
     Snapchat,
     Spotify,
     Sprint,
@@ -97,7 +99,6 @@ BrandColors includes a sample project in the Demo folder.
     ZTE
 )
 ```
-
 # TODO
 - Add more brands
 

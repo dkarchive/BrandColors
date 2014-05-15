@@ -50,6 +50,7 @@
                       
                       @"Microsoft",
                       @"Motorola",
+                      @"Mozilla",
                       
                       @"Netflix",
                       @"Nintendo",
@@ -63,6 +64,7 @@
                       @"Rovio",
                       
                       @"Samsung",
+                      @"Shazam",
                       @"Snapchat",
                       @"Spotify",
                       @"Sprint",
@@ -214,6 +216,10 @@
     if ([self brand:brand matches:@"Motorola"]) {
         return [UIColor dk_colorWithHexString:@"#5C92FA"];
     }
+
+    if ([self brand:brand matches:@"Mozilla"]) {
+        return [UIColor dk_colorWithHexString:@"#C34139"];
+    }
     
     if ([self brand:brand matches:@"Netflix"]) {
         return [UIColor dk_colorWithHexString:@"#b9070a"];
@@ -245,6 +251,10 @@
     
     if ([self brand:brand matches:@"Samsung"]) {
         return [UIColor dk_colorWithHexString:@"#0c4da2"];
+    }
+    
+    if ([self brand:brand matches:@"Shazam"]) {
+        return [UIColor dk_colorWithHexString:@"#1B87E3"];
     }
     
     if ([self brand:brand matches:@"Snapchat"]) {
