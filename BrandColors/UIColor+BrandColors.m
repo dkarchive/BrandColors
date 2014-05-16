@@ -205,7 +205,7 @@
         return [UIColor dk_colorWithHexString:@"#0e76a8"];
     }
     
-    if ([self brand:brand matches:@"LINE"]) {
+    if ([brand.lowercaseString isEqualToString:@"line"]) {
         return [UIColor dk_colorWithHexString:@"#1DCD00"];
     }
     
