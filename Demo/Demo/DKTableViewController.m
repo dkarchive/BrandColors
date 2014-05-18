@@ -22,9 +22,11 @@
         // Custom initialization
         self.dataSource = [UIColor bc_brands];
         self.title = @"Brand Colors";
-        self.tableView.rowHeight = 50;
+        self.tableView.rowHeight = 54;
         
         NSLog(@"BrandColors contains %@ brands:%@", @([UIColor bc_brands].count),[UIColor bc_brands]);
+        
+        NSLog(@"BrandColors also has a list of brands with dark color:%@", [UIColor bc_brandsWithDarkColor]);
     }
     return self;
 }
@@ -59,6 +61,13 @@
 
     cell.textLabel.text = brand;
     cell.backgroundColor = [UIColor bc_colorForBrand:brand];
+    
+    if ([[UIColor bc_brandsWithDarkColor] containsObject:brand]) {
+        cell.textLabel.textColor = [UIColor whiteColor];
+    }
+    else {
+        cell.textLabel.textColor = [UIColor blackColor];
+    }
     
     return cell;
 }

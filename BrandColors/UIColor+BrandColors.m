@@ -96,6 +96,38 @@
 }
 
 
++ (NSArray*)bc_brandsWithDarkColor {
+    NSArray *darkColorBrands = @[
+                                 @"Apple",
+                                 @"Facebook",
+                                 @"Foxconn",
+                                 @"Flipkart",
+                                 @"Google",
+                                 @"IBM",
+                                 @"Intel",
+                                 @"Dish Network",
+                                 @"LG",
+                                 @"Qualcomm",
+                                 @"Microsoft",
+                                 @"Motorola",
+                                 @"Mozilla",
+                                 @"Netflix",
+                                 @"Nokia",
+                                 @"Samsung",
+                                 @"Shazam",
+                                 @"T-Mobile",
+                                 @"Tumblr",
+                                 @"WhatsApp",
+                                 @"Yahoo",
+                                 @"Yahoo!",
+                                 @"Yelp",
+                                 @"ZTE",
+                                 ];
+
+    return darkColorBrands;
+}
+
+
 + (UIColor*)bc_colorForBrand:(NSString*)brand {
     UIColor *brandColor = BC_DEFAULT_COLOR;
     

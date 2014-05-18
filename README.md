@@ -15,6 +15,13 @@ UIButton *facebookButton = [[UIButton alloc] init];
 facebookButton.backgroundColor = [UIColor bc_colorForBrand:@"Facebook"]; 
 
 NSLog(@"BrandColors contains %@ brands:%@", @([UIColor bc_brands].count),[UIColor bc_brands]);
+
+if ([[UIColor bc_brandsWithDarkColor] containsObject:brand]) {
+	cell.textLabel.textColor = [UIColor whiteColor];    
+}
+else {
+    cell.textLabel.textColor = [UIColor blackColor];
+}
 ```
 
 If a brand is not in Brand Colors, the default color returned is `[UIColor clearColor]`
