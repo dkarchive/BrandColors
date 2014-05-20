@@ -24,6 +24,8 @@
                       @"ARM",
                       @"AT&T",
                       
+                      @"Cisco",
+                      
                       @"Dish Network",
                       @"Dropbox",
                       
@@ -36,6 +38,7 @@
                       @"Foxconn",
                       
                       @"Google",
+                      @"GoPro",
                       
                       @"HP",
                       @"HTC",
@@ -62,6 +65,7 @@
                       @"Qualcomm",
                       
                       @"Rovio",
+                      @"Rdio",
                       
                       @"Samsung",
                       @"Shazam",
@@ -99,10 +103,12 @@
 + (NSArray*)bc_brandsWithDarkColor {
     NSArray *darkColorBrands = @[
                                  @"Apple",
+                                 @"Cisco",
                                  @"Facebook",
                                  @"Foxconn",
                                  @"Flipkart",
                                  @"Google",
+                                 @"GoPro",
                                  @"IBM",
                                  @"Intel",
                                  @"Dish Network",
@@ -113,6 +119,7 @@
                                  @"Mozilla",
                                  @"Netflix",
                                  @"Nokia",
+                                 @"Rdio",
                                  @"Samsung",
                                  @"Shazam",
                                  @"T-Mobile",
@@ -162,6 +169,10 @@
     if ([self brand:brand matches:@"AT&T"]) {
         return [UIColor dk_colorWithHexString:@"#2D96C8"];
     }
+
+    if ([self brand:brand matches:@"Cisco"]) {
+        return [UIColor dk_colorWithHexString:@"#11495E"];
+    }
     
     if ([self brand:brand matches:@"Dish Network"]) {
         return [UIColor dk_colorWithHexString:@"#DA121D"];
@@ -207,6 +218,10 @@
     
     if ([self brand:brand matches:@"Google"]) {
         return [UIColor dk_colorWithHexString:@"#4285f4"];
+    }
+
+    if ([self brand:brand matches:@"GoPro"]) {
+        return [UIColor dk_colorWithHexString:@"#009EE2"];
     }
     
     if ([self brand:brand matches:@"HP"]) {
@@ -281,6 +296,10 @@
         return [UIColor dk_colorWithHexString:@"#C02227"];
     }
     
+    if ([self brand:brand matches:@"Rdio"]) {
+        return [UIColor dk_colorWithHexString:@"#007dc3"];
+    }
+
     if ([self brand:brand matches:@"Samsung"]) {
         return [UIColor dk_colorWithHexString:@"#0c4da2"];
     }
