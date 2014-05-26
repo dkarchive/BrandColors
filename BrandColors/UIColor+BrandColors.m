@@ -24,6 +24,8 @@
                       @"ARM",
                       @"AT&T",
                       
+                      @"Blizzard",
+                      
                       @"Cisco",
                       
                       @"Dish Network",
@@ -170,6 +172,10 @@
         return [UIColor dk_colorWithHexString:@"#2D96C8"];
     }
 
+    if ([self brand:brand matches:@"Blizzard"]) {
+        return [UIColor dk_colorWithHexString:@"#01B2F1"];
+    }    
+    
     if ([self brand:brand matches:@"Cisco"]) {
         return [UIColor dk_colorWithHexString:@"#11495E"];
     }
