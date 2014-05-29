@@ -48,8 +48,7 @@ BrandColors includes a sample project in the Demo folder.
 
 # List of Brands
 ```
-2014-05-26 15:30:19.068 Demo[12199:60b] Cannot find executable for CFBundle 0x8c73020 </Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator7.1.sdk/System/Library/AccessibilityBundles/CertUIFramework.axbundle> (not loaded)
-2014-05-26 15:30:19.112 Demo[12199:60b] BrandColors contains 59 brands:(
+2014-05-29 06:05:09.688 Demo[20805:60b] BrandColors contains 60 brands:(
     Alibaba,
     Adobe,
     Airbnb,
@@ -58,6 +57,7 @@ BrandColors includes a sample project in the Demo folder.
     Apple,
     ARM,
     "AT&T",
+    Beats,
     Blizzard,
     Cisco,
     "Dish Network",
