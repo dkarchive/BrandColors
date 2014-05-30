@@ -48,7 +48,7 @@ BrandColors includes a sample project in the Demo folder.
 
 # List of Brands
 ```
-2014-05-29 06:05:09.688 Demo[20805:60b] BrandColors contains 60 brands:(
+2014-05-30 05:52:27.264 Demo[25543:60b] BrandColors contains 62 brands:(
     Alibaba,
     Adobe,
     Airbnb,
@@ -68,6 +68,7 @@ BrandColors includes a sample project in the Demo folder.
     Flipkart,
     Foursquare,
     Foxconn,
+    "General Electric",
     Google,
     GoPro,
     HP,
@@ -108,6 +109,7 @@ BrandColors includes a sample project in the Demo folder.
     Xiaomi,
     "Yahoo!",
     Yelp,
+    YouTube,
     ZTE
 )
 ```
