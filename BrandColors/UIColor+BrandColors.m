@@ -40,6 +40,7 @@
                       @"Foursquare",
                       @"Foxconn",
                       
+                      @"General Electric",
                       @"Google",
                       @"GoPro",
                       
@@ -95,6 +96,7 @@
                       
                       @"Yahoo!",
                       @"Yelp",
+                      @"YouTube",
                       
                       @"ZTE",
                       ];
@@ -113,6 +115,7 @@
                                  @"Flipkart",
                                  @"Google",
                                  @"GoPro",
+                                 @"Huawei",
                                  @"IBM",
                                  @"Intel",
                                  @"Dish Network",
@@ -128,10 +131,12 @@
                                  @"Shazam",
                                  @"T-Mobile",
                                  @"Tumblr",
+                                 @"Verizon",
                                  @"WhatsApp",
                                  @"Yahoo",
                                  @"Yahoo!",
                                  @"Yelp",
+                                 @"YouTube",
                                  @"ZTE",
                                  ];
 
@@ -227,7 +232,11 @@
     if ([self brand:brand matches:@"Foursquare"]) {
         return [UIColor dk_colorWithHexString:@"#0cbadf"];
     }
-    
+
+    if ([self brand:brand matches:@"General Electric"]) {
+        return [UIColor dk_colorWithHexString:@"#019DDD"];
+    }
+
     if ([self brand:brand matches:@"Google"]) {
         return [UIColor dk_colorWithHexString:@"#4285f4"];
     }
@@ -389,6 +398,10 @@
     
     if ([self brand:brand matches:@"Yelp"]) {
         return [UIColor dk_colorWithHexString:@"#c41200"];
+    }
+
+    if ([self brand:brand matches:@"YouTube"]) {
+        return [UIColor dk_colorWithHexString:@"#e52d27"];
     }
     
     if ([self brand:brand matches:@"ZTE"]) {
