@@ -26,6 +26,7 @@
                       
                       @"Beats",
                       @"Blizzard",
+                      @"Broadcom",
                       
                       @"Cisco",
                       
@@ -49,6 +50,7 @@
                       @"Huawei",
                       
                       @"IBM",
+                      @"Instagram",
                       @"Intel",
                       
                       @"LG",
@@ -90,6 +92,7 @@
                       @"Vine",
                       @"VSCO",
                       
+                      @"Walmart",
                       @"WhatsApp",
                       
                       @"Xiaomi",
@@ -109,6 +112,7 @@
     NSArray *darkColorBrands = @[
                                  @"Apple",
                                  @"Beats",
+                                 @"Broadcom",
                                  @"Cisco",
                                  @"Facebook",
                                  @"Foxconn",
@@ -117,6 +121,7 @@
                                  @"GoPro",
                                  @"Huawei",
                                  @"IBM",
+                                 @"Instagram",
                                  @"Intel",
                                  @"Dish Network",
                                  @"LG",
@@ -132,6 +137,7 @@
                                  @"T-Mobile",
                                  @"Tumblr",
                                  @"Verizon",
+                                 @"Walmart",
                                  @"WhatsApp",
                                  @"Yahoo",
                                  @"Yahoo!",
@@ -187,6 +193,10 @@
         return [UIColor dk_colorWithHexString:@"#01B2F1"];
     }    
     
+    if ([self brand:brand matches:@"Broadcom"]) {
+        return [UIColor dk_colorWithHexString:@"#E81231"];
+    }
+
     if ([self brand:brand matches:@"Cisco"]) {
         return [UIColor dk_colorWithHexString:@"#11495E"];
     }
@@ -259,6 +269,10 @@
     
     if ([self brand:brand matches:@"IBM"]) {
         return [UIColor dk_colorWithHexString:@"#003e6a"];
+    }
+    
+    if ([self brand:brand matches:@"Instagram"]) {
+        return [UIColor dk_colorWithHexString:@"#3f729b"];
     }
     
     if ([self brand:brand matches:@"Intel"]) {
@@ -384,6 +398,10 @@
         return [UIColor dk_colorWithHexString:@"#AAA94C"];
     }
 
+    if ([self brand:brand matches:@"Walmart"]) {
+        return [UIColor dk_colorWithHexString:@"#005CB0"];
+    }
+    
     if ([self brand:brand matches:@"WhatsApp"]) {
         return [UIColor dk_colorWithHexString:@"#34AF23"];
     }
