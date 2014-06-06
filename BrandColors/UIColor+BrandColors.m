@@ -90,6 +90,7 @@
                       @"Verizon",
                       @"Vimeo",
                       @"Vine",
+                      @"Vodafone",
                       @"VSCO",
                       
                       @"Walmart",
@@ -114,6 +115,7 @@
                                  @"Beats",
                                  @"Broadcom",
                                  @"Cisco",
+                                 @"Dropbox",
                                  @"Facebook",
                                  @"Foxconn",
                                  @"Flipkart",
@@ -136,7 +138,9 @@
                                  @"Shazam",
                                  @"T-Mobile",
                                  @"Tumblr",
+                                 @"Uber",
                                  @"Verizon",
+                                 @"Vodafone",
                                  @"Walmart",
                                  @"WhatsApp",
                                  @"Yahoo",
@@ -392,6 +396,10 @@
     
     if ([self brand:brand matches:@"Vine"]) {
         return [UIColor dk_colorWithHexString:@"#00a478"];
+    }
+
+    if ([self brand:brand matches:@"Vodafone"]) {
+        return [UIColor dk_colorWithHexString:@"#E90000"];
     }
     
     if ([self brand:brand matches:@"VSCO"]) {

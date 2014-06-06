@@ -48,7 +48,7 @@ BrandColors includes a sample project in the Demo folder.
 
 # List of Brands
 ```
-2014-06-04 08:05:56.513 Demo[4176:607] BrandColors contains 65 brands:(
+2014-06-06 14:38:15.248 Demo[15303:607] BrandColors contains 66 brands:(
     Alibaba,
     Adobe,
     Airbnb,
@@ -106,6 +106,7 @@ BrandColors includes a sample project in the Demo folder.
     Verizon,
     Vimeo,
     Vine,
+    Vodafone,
     VSCO,
     Walmart,
     WhatsApp,
@@ -114,7 +115,7 @@ BrandColors includes a sample project in the Demo folder.
     Yelp,
     YouTube,
     ZTE
-)
+) 
 ```
 # TODO
 - Add more brands
