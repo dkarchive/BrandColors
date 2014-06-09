@@ -48,7 +48,8 @@ BrandColors includes a sample project in the Demo folder.
 
 # List of Brands
 ```
-2014-06-06 14:38:15.248 Demo[15303:607] BrandColors contains 66 brands:(
+2014-06-09 13:40:56.262 Demo[10583:607] BrandColors contains 69 brands:(
+    Acer,
     Alibaba,
     Adobe,
     Airbnb,
@@ -60,7 +61,9 @@ BrandColors includes a sample project in the Demo folder.
     Beats,
     Blizzard,
     Broadcom,
+    "China Mobile",
     Cisco,
+    Corning,
     "Dish Network",
     Dropbox,
     eBay,

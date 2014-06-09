@@ -15,6 +15,7 @@
 
 + (NSArray*)bc_brands {
     NSArray *list = @[
+                      @"Acer",
                       @"Alibaba",
                       @"Adobe",
                       @"Airbnb",
@@ -28,7 +29,9 @@
                       @"Blizzard",
                       @"Broadcom",
                       
+                      @"China Mobile",
                       @"Cisco",
+                      @"Corning",
                       
                       @"Dish Network",
                       @"Dropbox",
@@ -111,10 +114,13 @@
 
 + (NSArray*)bc_brandsWithDarkColor {
     NSArray *darkColorBrands = @[
+                                 @"Acer",
                                  @"Apple",
                                  @"Beats",
                                  @"Broadcom",
+                                 @"China Mobile",
                                  @"Cisco",
+                                 @"Corning",
                                  @"Dropbox",
                                  @"Facebook",
                                  @"Foxconn",
@@ -156,6 +162,10 @@
 
 + (UIColor*)bc_colorForBrand:(NSString*)brand {
     UIColor *brandColor = BC_DEFAULT_COLOR;
+    
+    if ([self brand:brand matches:@"Acer"]) {
+        return [UIColor dk_colorWithHexString:@"#83B941"];
+    }
     
     if ([self brand:brand matches:@"Alibaba"]) {
         return [UIColor dk_colorWithHexString:@"#FF7300"];
@@ -200,9 +210,17 @@
     if ([self brand:brand matches:@"Broadcom"]) {
         return [UIColor dk_colorWithHexString:@"#E81231"];
     }
+    
+    if ([self brand:brand matches:@"China Mobile"]) {
+        return [UIColor dk_colorWithHexString:@"#0086D0"];
+    }
 
     if ([self brand:brand matches:@"Cisco"]) {
         return [UIColor dk_colorWithHexString:@"#11495E"];
+    }
+
+    if ([self brand:brand matches:@"Corning"]) {
+        return [UIColor dk_colorWithHexString:@"#00559B"];
     }
     
     if ([self brand:brand matches:@"Dish Network"]) {
