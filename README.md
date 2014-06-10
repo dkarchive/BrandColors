@@ -47,8 +47,8 @@ yahooColor = [UIColor bc_colorForBrand:@"Yahoo!"];
 BrandColors includes a sample project in the Demo folder.
 
 # List of Brands
-```
-2014-06-09 13:40:56.262 Demo[10583:607] BrandColors contains 69 brands:(
+``` objc
+2014-06-10 09:02:47.530 Demo[1676:607] BrandColors contains 71 brands:(
     Acer,
     Alibaba,
     Adobe,
@@ -90,6 +90,7 @@ BrandColors includes a sample project in the Demo folder.
     Netflix,
     Nintendo,
     Nokia,
+    "NTT DoCoMo",
     NVIDIA,
     PayPal,
     Qualcomm,
@@ -97,6 +98,7 @@ BrandColors includes a sample project in the Demo folder.
     Rdio,
     Samsung,
     Shazam,
+    Skype,
     Snapchat,
     Spotify,
     Sprint,
@@ -118,13 +120,11 @@ BrandColors includes a sample project in the Demo folder.
     Yelp,
     YouTube,
     ZTE
-) 
+)
 ```
-# TODO
-- Add more brands
 
 # Credits
-Most colors are from Brand Colors http://brandcolors.net
+Thanks to [Galen Gidman](https://github.com/galengidman)'s http://brandcolors.net
 
 # Say Hi
 - [github.com/dkhamsing](https://github.com/dkhamsing)
