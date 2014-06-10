@@ -303,7 +303,7 @@
         return [UIColor dk_colorWithHexString:@"#0071c5"];
     }
     
-    if ([brand.lowercaseString isEqualToString:@"LG"]) {        
+    if ([brand.lowercaseString isEqualToString:@"lg"]) {        
         return [UIColor dk_colorWithHexString:@"#B20E50"];
     }
     
