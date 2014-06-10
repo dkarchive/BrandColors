@@ -47,7 +47,7 @@ yahooColor = [UIColor bc_colorForBrand:@"Yahoo!"];
 BrandColors includes a sample project in the Demo folder.
 
 # List of Brands
-``` objc
+``` 
 2014-06-10 09:02:47.530 Demo[1676:607] BrandColors contains 71 brands:(
     Acer,
     Alibaba,
