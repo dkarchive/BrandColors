@@ -67,6 +67,7 @@
                       @"Netflix",
                       @"Nintendo",
                       @"Nokia",
+                      @"NTT DoCoMo",
                       @"NVIDIA",
                       
                       @"PayPal",
@@ -78,6 +79,7 @@
                       
                       @"Samsung",
                       @"Shazam",
+                      @"Skype",
                       @"Snapchat",
                       @"Spotify",
                       @"Sprint",
@@ -336,7 +338,11 @@
     if ([self brand:brand matches:@"Nokia"]) {
         return [UIColor dk_colorWithHexString:@"#183693"];
     }
-    
+
+    if ([self brand:brand matches:@"NTT DoCoMo"]) {
+        return [UIColor dk_colorWithHexString:@"#CC0033"];
+    }
+
     if ([self brand:brand matches:@"NVIDIA"]) {
         return [UIColor dk_colorWithHexString:@"#77B900"];
     }
@@ -364,7 +370,11 @@
     if ([self brand:brand matches:@"Shazam"]) {
         return [UIColor dk_colorWithHexString:@"#1B87E3"];
     }
-    
+
+    if ([self brand:brand matches:@"Skype"]) {
+        return [UIColor dk_colorWithHexString:@"#00aff0"];
+    }
+
     if ([self brand:brand matches:@"Snapchat"]) {
         return [UIColor dk_colorWithHexString:@"#FFFC00"];
     }
