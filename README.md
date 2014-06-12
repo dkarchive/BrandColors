@@ -48,7 +48,7 @@ BrandColors includes a sample project in the Demo folder.
 
 # List of Brands
 ``` 
-2014-06-10 09:02:47.530 Demo[1676:607] BrandColors contains 71 brands:(
+2014-06-12 12:09:49.287 Demo[27876:607] BrandColors contains 72 brands:(
     Acer,
     Alibaba,
     Adobe,
@@ -68,6 +68,7 @@ BrandColors includes a sample project in the Demo folder.
     Dropbox,
     eBay,
     Evernote,
+    Expedia,
     Facebook,
     Flipkart,
     Foursquare,
@@ -120,7 +121,7 @@ BrandColors includes a sample project in the Demo folder.
     Yelp,
     YouTube,
     ZTE
-)
+) 
 ```
 
 # Credits

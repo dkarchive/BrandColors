@@ -38,6 +38,7 @@
                       
                       @"eBay",
                       @"Evernote",
+                      @"Expedia",
                       
                       @"Facebook",
                       @"Flipkart",
@@ -127,6 +128,7 @@
                                  @"Corning",
                                  @"Dropbox",
                                  @"eBay",
+                                 @"Expedia",
                                  @"Facebook",
                                  @"Foxconn",
                                  @"Flipkart",
@@ -257,6 +259,10 @@
     
     if ([self brand:brand matches:@"Evernote"]) {
         return [UIColor dk_colorWithHexString:@"#7ac142"];
+    }
+
+    if ([self brand:brand matches:@"Expedia"]) {
+        return [UIColor dk_colorWithHexString:@"#00355F"];
     }
     
     if ([self brand:brand matches:@"Facebook"]) {
