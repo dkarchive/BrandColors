@@ -27,7 +27,9 @@
                       
                       @"Beats",
                       @"Blizzard",
+                      @"Box",
                       @"Broadcom",
+                      @"BuzzFeed",
                       
                       @"China Mobile",
                       @"Cisco",
@@ -66,6 +68,7 @@
                       @"Mozilla",
                       
                       @"Netflix",
+                      @"Nest",
                       @"Nintendo",
                       @"Nokia",
                       @"NTT DoCoMo",
@@ -122,6 +125,8 @@
                                  @"Apple",
                                  @"ARM",
                                  @"Beats",
+                                 @"Box",
+                                 @"BuzzFeed",
                                  @"Broadcom",
                                  @"China Mobile",
                                  @"Cisco",
@@ -132,6 +137,7 @@
                                  @"Facebook",
                                  @"Foxconn",
                                  @"Flipkart",
+                                 @"Garmin",
                                  @"Google",
                                  @"GoPro",
                                  @"Huawei",
@@ -146,6 +152,7 @@
                                  @"Motorola",
                                  @"Mozilla",
                                  @"Netflix",
+                                 @"Nest",
                                  @"Nokia",
                                  @"NTT DoCoMo",
                                  @"PayPal",
@@ -219,10 +226,18 @@
         return [UIColor dk_colorWithHexString:@"#01B2F1"];
     }    
     
+    if ([brand.lowercaseString isEqualToString:@"box"]) {
+        return [UIColor dk_colorWithHexString:@"#197BC6"];
+    }
+    
     if ([self brand:brand matches:@"Broadcom"]) {
         return [UIColor dk_colorWithHexString:@"#E81231"];
     }
-    
+
+    if ([self brand:brand matches:@"BuzzFeed"]) {
+        return [UIColor dk_colorWithHexString:@"#EE3322"];
+    }
+
     if ([self brand:brand matches:@"China Mobile"]) {
         return [UIColor dk_colorWithHexString:@"#0086D0"];
     }
@@ -339,6 +354,10 @@
 
     if ([self brand:brand matches:@"Mozilla"]) {
         return [UIColor dk_colorWithHexString:@"#C34139"];
+    }
+    
+    if ([brand.lowercaseString isEqualToString:@"nest"]) {
+        return [UIColor dk_colorWithHexString:@"#1EB6DC"];
     }
     
     if ([self brand:brand matches:@"Netflix"]) {
