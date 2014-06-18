@@ -56,6 +56,7 @@
                       @"Huawei",
                       
                       @"IBM",
+                      @"iHeartRadio",
                       @"Instagram",
                       @"Intel",
                       
@@ -142,6 +143,7 @@
                                  @"GoPro",
                                  @"Huawei",
                                  @"IBM",
+                                 @"iHeartRadio",
                                  @"Instagram",
                                  @"Intel",
                                  @"Dish Network",
@@ -324,6 +326,10 @@
         return [UIColor dk_colorWithHexString:@"#003e6a"];
     }
     
+    if ([self brand:brand matches:@"iHeartRadio"]) {
+        return [UIColor dk_colorWithHexString:@"#BC1C10"];
+    }
+
     if ([self brand:brand matches:@"Instagram"]) {
         return [UIColor dk_colorWithHexString:@"#3f729b"];
     }
