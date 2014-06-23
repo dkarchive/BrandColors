@@ -19,9 +19,15 @@
 
 
 /**
- List of brands that have a "dark" color.
+  Deprecated.
  */
-+ (NSArray*)bc_brandsWithDarkColor;
+//+ (NSArray*)bc_brandsWithDarkColor;
+
+
+/**
+ List of brands that have a "light" color.
+ */
++ (NSArray*)bc_brandsWithLightColor;
 
 
 /**

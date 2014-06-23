@@ -26,7 +26,7 @@
         
         NSLog(@"BrandColors contains %@ brands:%@", @([UIColor bc_brands].count),[UIColor bc_brands]);
         
-        NSLog(@"BrandColors also has a list of brands with dark color:%@", [UIColor bc_brandsWithDarkColor]);
+        NSLog(@"BrandColors also has a list of brands with light color:%@", [UIColor bc_brandsWithLightColor]);
     }
     return self;
 }
@@ -62,11 +62,11 @@
     cell.textLabel.text = brand;
     cell.backgroundColor = [UIColor bc_colorForBrand:brand];
     
-    if ([[UIColor bc_brandsWithDarkColor] containsObject:brand]) {
-        cell.textLabel.textColor = [UIColor whiteColor];
+    if ([[UIColor bc_brandsWithLightColor] containsObject:brand]) {
+        cell.textLabel.textColor = [UIColor blackColor];
     }
     else {
-        cell.textLabel.textColor = [UIColor blackColor];
+        cell.textLabel.textColor = [UIColor whiteColor];
     }
     
     return cell;

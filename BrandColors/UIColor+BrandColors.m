@@ -119,65 +119,18 @@
 }
 
 
+/*
+ deprecated
 + (NSArray*)bc_brandsWithDarkColor {
-    NSArray *darkColorBrands = @[
-                                 @"Acer",
-                                 @"Adobe",
-                                 @"Apple",
-                                 @"ARM",
-                                 @"Beats",
-                                 @"Box",
-                                 @"BuzzFeed",
-                                 @"Broadcom",
-                                 @"China Mobile",
-                                 @"Cisco",
-                                 @"Corning",
-                                 @"Dropbox",
-                                 @"eBay",
-                                 @"Expedia",
-                                 @"Facebook",
-                                 @"Foxconn",
-                                 @"Flipkart",
-                                 @"Garmin",
-                                 @"Google",
-                                 @"GoPro",
-                                 @"Huawei",
-                                 @"IBM",
-                                 @"iHeartRadio",
-                                 @"Instagram",
-                                 @"Intel",
-                                 @"Dish Network",
-                                 @"LG",
-                                 @"LinkedIn",
-                                 @"Qualcomm",
-                                 @"Microsoft",
-                                 @"Motorola",
-                                 @"Mozilla",
-                                 @"Netflix",
-                                 @"Nest",
-                                 @"Nokia",
-                                 @"NTT DoCoMo",
-                                 @"PayPal",
-                                 @"Rdio",
-                                 @"Samsung",
-                                 @"Shazam",
-                                 @"Skype",
-                                 @"Staples",
-                                 @"T-Mobile",
-                                 @"Tumblr",
-                                 @"Uber",
-                                 @"Verizon",
-                                 @"Vodafone",
-                                 @"Walmart",
-                                 @"WhatsApp",
-                                 @"Yahoo",
-                                 @"Yahoo!",
-                                 @"Yelp",
-                                 @"YouTube",
-                                 @"ZTE",
-                                 ];
+    return nil;
+}*/
 
-    return darkColorBrands;
+
++ (NSArray*)bc_brandsWithLightColor {
+    NSArray *brandsWithLightColor = @[
+                                      @"Snapchat",
+                                      ];
+    return brandsWithLightColor;
 }
 
 

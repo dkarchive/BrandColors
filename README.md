@@ -16,11 +16,11 @@ facebookButton.backgroundColor = [UIColor bc_colorForBrand:@"Facebook"];
 
 NSLog(@"BrandColors contains %@ brands:%@", @([UIColor bc_brands].count),[UIColor bc_brands]);
 
-if ([[UIColor bc_brandsWithDarkColor] containsObject:brand]) {
-	cell.textLabel.textColor = [UIColor whiteColor];    
+if ([[UIColor bc_brandsWithLightColor] containsObject:brand]) {
+	cell.textLabel.textColor = [UIColor blackColor];    
 }
 else {
-    cell.textLabel.textColor = [UIColor blackColor];
+    cell.textLabel.textColor = [UIColor whiteColor];
 }
 ```
 
