@@ -48,7 +48,7 @@ BrandColors includes a sample project in the Demo folder.
 
 # List of Brands
 ``` 
-2014-06-18 12:01:31.546 Demo[6670:607] BrandColors contains 76 brands:(
+2014-06-24 11:31:17.601 Demo[83255:607] BrandColors contains 77 brands:(
     Acer,
     Alibaba,
     Adobe,
@@ -119,13 +119,14 @@ BrandColors includes a sample project in the Demo folder.
     Vodafone,
     VSCO,
     Walmart,
+    WeChat,
     WhatsApp,
     Xiaomi,
     "Yahoo!",
     Yelp,
     YouTube,
     ZTE
-)
+) 
 ```
 
 # Credits

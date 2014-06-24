@@ -104,6 +104,7 @@
                       @"VSCO",
                       
                       @"Walmart",
+                      @"WeChat",
                       @"WhatsApp",
                       
                       @"Xiaomi",
@@ -428,6 +429,10 @@
 
     if ([self brand:brand matches:@"Walmart"]) {
         return [UIColor dk_colorWithHexString:@"#005CB0"];
+    }
+    
+    if ([self brand:brand matches:@"WeChat"]) {
+        return [UIColor dk_colorWithHexString:@"#93D034"];
     }
     
     if ([self brand:brand matches:@"WhatsApp"]) {
