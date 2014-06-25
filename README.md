@@ -33,7 +33,7 @@ If a brand is not in Brand Colors, the default color returned is `[UIColor clear
 
 `bc_colorForBrand:` attemps to match brands
 
-``` 
+``` objc
 UIColor *facebookColor;
 // facebook or Facebook will work
 facebookColor = [UIColor bc_colorForBrand:@"Facebook"]; 
@@ -47,13 +47,13 @@ yahooColor = [UIColor bc_colorForBrand:@"Yahoo!"];
 
 ## Swift
 ``` swift
-let facebookButton = UIButton()
+var facebookButton = UIButton()
 facebookButton.backgroundColor = UIColor.bc_colorForBrand("Facebook")
 
 println("BrandColors contains \(UIColor.bc_brands().count) brands: \(UIColor.bc_brands())")
 
-let array:String[] = UIColor.bc_brandsWithLightColor() as String[]
-if ( contains(array,brand) ) {
+let lightColorBrands:String[] = UIColor.bc_brandsWithLightColor() as String[]
+if ( contains(lightColorBrands,brand) ) {
   cell.textColor = UIColor.blackColor()
 }  
 else {
