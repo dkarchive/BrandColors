@@ -45,12 +45,14 @@ class BrandsTableViewController: UITableViewController {
         cell.text = "\(brand)"
         cell.backgroundColor = UIColor.bc_colorForBrand(brand)
         
-        cell.textColor = UIColor.whiteColor()
         let array:String[] = UIColor.bc_brandsWithLightColor() as String[]
         if ( contains(array,brand) ) {
             cell.textColor = UIColor.blackColor()
         }
+        else {
+            cell.textColor = UIColor.whiteColor()
+        }
 
         return cell
-    }    
+    }
 }
