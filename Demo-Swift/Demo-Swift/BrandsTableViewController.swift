@@ -10,7 +10,7 @@ import UIKit
 
 class BrandsTableViewController: UITableViewController {
 
-    var dataSource:NSArray = UIColor.bc_brands()
+    let dataSource:NSArray = UIColor.bc_brands()
   
     override func viewDidLoad() {
         super.viewDidLoad()
