@@ -27,11 +27,6 @@ class BrandsTableViewController: UITableViewController {
 
     // #pragma mark - Table view data source
 
-    override func numberOfSectionsInTableView(tableView: UITableView?) -> Int {
-        // Return the number of sections.
-        return 1
-    }
-
     override func tableView(tableView: UITableView?, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
         return self.dataSource.count
@@ -40,7 +35,7 @@ class BrandsTableViewController: UITableViewController {
     override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
         var cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as UITableViewCell
         
-        var brand = self.dataSource[indexPath.row] as String
+        let brand = self.dataSource[indexPath.row] as String
         
         cell.text = "\(brand)"
         cell.backgroundColor = UIColor.bc_colorForBrand(brand)
