@@ -75,6 +75,9 @@
                       @"NTT DoCoMo",
                       @"NVIDIA",
                       
+                      @"Opera",
+                      
+                      @"Panasonic",
                       @"PayPal",
                       
                       @"Qualcomm",
@@ -340,6 +343,14 @@
         return [UIColor dk_colorWithHexString:@"#77B900"];
     }
     
+    if ([brand.lowercaseString isEqualToString:@"opera"]) {
+        return [UIColor dk_colorWithHexString:@"#cc0f16"];
+    }
+    
+    if ([self brand:brand matches:@"Panasonic"]) {
+        return [UIColor dk_colorWithHexString:@"#0438C2"];
+    }
+
     if ([self brand:brand matches:@"PayPal"]) {
         return [UIColor dk_colorWithHexString:@"#3b7bbf"];
     }

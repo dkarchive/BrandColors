@@ -48,7 +48,7 @@ BrandColors includes a sample project in the Demo folder.
 
 # List of Brands
 ``` 
-2014-06-24 11:31:17.601 Demo[83255:607] BrandColors contains 77 brands:(
+2014-06-25 08:38:33.904 Demo[95204:607] BrandColors contains 79 brands:(
     Acer,
     Alibaba,
     Adobe,
@@ -97,6 +97,8 @@ BrandColors includes a sample project in the Demo folder.
     Nokia,
     "NTT DoCoMo",
     NVIDIA,
+    Opera,
+    Panasonic,
     PayPal,
     Qualcomm,
     Rovio,
@@ -126,7 +128,7 @@ BrandColors includes a sample project in the Demo folder.
     Yelp,
     YouTube,
     ZTE
-) 
+)  
 ```
 
 # Credits
