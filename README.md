@@ -10,7 +10,9 @@ UIColor Category for Brand Colors
 - `#import "UIColor+BrandColors.h"`
 
 # Usage
-``` 
+
+## Objective-C
+``` objc
 UIButton *facebookButton = [[UIButton alloc] init];
 facebookButton.backgroundColor = [UIColor bc_colorForBrand:@"Facebook"]; 
 
@@ -43,8 +45,24 @@ yahooColor = [UIColor bc_colorForBrand:@"Yahoo"];
 yahooColor = [UIColor bc_colorForBrand:@"Yahoo!"]; 
 ```
 
+## Swift
+``` swift
+let facebookButton = UIButton()
+facebookButton.backgroundColor = UIColor.bc_colorForBrand("Facebook")
+
+println("BrandColors contains \(UIColor.bc_brands().count) brands: \(UIColor.bc_brands())")
+
+let array:String[] = UIColor.bc_brandsWithLightColor() as String[]
+if ( contains(array,brand) ) {
+  cell.textColor = UIColor.blackColor()
+}  
+else {
+  cell.textColor = UIColor.whiteColor()
+}
+```
+
 # Demo
-BrandColors includes a sample project in the Demo folder.
+BrandColors includes two sample projects, one written in Objective-C and one written in Swift.
 
 # List of Brands
 ``` 
@@ -134,10 +152,10 @@ BrandColors includes a sample project in the Demo folder.
 # Credits
 Thanks to [Galen Gidman](https://github.com/galengidman)'s http://brandcolors.net
 
-# Say Hi
-- [github.com/dkhamsing](https://github.com/dkhamsing)
-- [twitter.com/dkhamsing](https://twitter.com/dkhamsing)
-- [contact](http://dkhamsing.tumblr.com/ask)
+# Contact
+- GitHub: [@dkhamsing](https://github.com/dkhamsing)
+- Twitter: [@dkhamsing](https://twitter.com/dkhamsing)
+- [Send a Message](http://dkhamsing.tumblr.com/ask)
 
 # License
 BrandColors is available under the MIT license. See the [LICENSE](LICENSE) file for more info.
