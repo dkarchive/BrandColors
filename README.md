@@ -66,7 +66,7 @@ BrandColors includes two sample projects, one written in Objective-C and one wri
 
 # List of Brands
 ``` 
-2014-06-25 08:38:33.904 Demo[95204:607] BrandColors contains 79 brands:(
+2014-07-02 08:52:27.036 Demo[94242:39159975] BrandColors contains 81 brands:(
     Acer,
     Alibaba,
     Adobe,
@@ -84,9 +84,11 @@ BrandColors includes two sample projects, one written in Objective-C and one wri
     "China Mobile",
     Cisco,
     Corning,
+    DirecTV,
     "Dish Network",
     Dropbox,
     eBay,
+    Ericsson,
     Evernote,
     Expedia,
     Facebook,
@@ -146,7 +148,7 @@ BrandColors includes two sample projects, one written in Objective-C and one wri
     Yelp,
     YouTube,
     ZTE
-)  
+)    
 ```
 
 # Credits
