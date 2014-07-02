@@ -35,10 +35,12 @@
                       @"Cisco",
                       @"Corning",
                       
+                      @"DirecTV",
                       @"Dish Network",
                       @"Dropbox",
                       
                       @"eBay",
+                      @"Ericsson",
                       @"Evernote",
                       @"Expedia",
                       
@@ -209,6 +211,10 @@
         return [UIColor dk_colorWithHexString:@"#00559B"];
     }
     
+    if ([self brand:brand matches:@"DirecTV"]) {
+        return [UIColor dk_colorWithHexString:@"#0097CD"];
+    }
+    
     if ([self brand:brand matches:@"Dish Network"]) {
         return [UIColor dk_colorWithHexString:@"#DA121D"];
     }
@@ -230,7 +236,11 @@
          */
         return [UIColor dk_colorWithHexString:@"#e53238"];
     }
-    
+
+    if ([self brand:brand matches:@"Ericsson"]) {
+        return [UIColor dk_colorWithHexString:@"#002561"];
+    }
+
     if ([self brand:brand matches:@"Evernote"]) {
         return [UIColor dk_colorWithHexString:@"#7ac142"];
     }
