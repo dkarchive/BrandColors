@@ -65,6 +65,7 @@
                       @"LG",
                       @"LinkedIn",
                       @"LINE",
+                      @"Lyft",
                       
                       @"Microsoft",
                       @"Motorola",
@@ -98,6 +99,7 @@
                       
                       @"T-Mobile",
                       @"Tumblr",
+                      @"Twitch",
                       @"Twitter",
                       
                       @"Uber",
@@ -123,13 +125,6 @@
     
     return list;
 }
-
-
-/*
- deprecated
-+ (NSArray*)bc_brandsWithDarkColor {
-    return nil;
-}*/
 
 
 + (NSArray*)bc_brandsWithLightColor {
@@ -316,6 +311,10 @@
     if ([brand.lowercaseString isEqualToString:@"line"]) {
         return [UIColor dk_colorWithHexString:@"#1DCD00"];
     }
+
+    if ([self brand:brand matches:@"Lyft"]) {
+        return [UIColor dk_colorWithHexString:@"#00B4AE"];
+    }
     
     if ([self brand:brand matches:@"Microsoft"]) {
         return [UIColor dk_colorWithHexString:@"#00a1f1"];
@@ -414,6 +413,10 @@
         ([self brand:brand matches:@"TMobile"])
         ) {
         return [UIColor dk_colorWithHexString:@"#ea0a8e"];
+    }
+
+    if ([self brand:brand matches:@"Twitch"]) {
+        return [UIColor dk_colorWithHexString:@"#6441a5"];
     }
     
     if ([self brand:brand matches:@"Twitter"]) {

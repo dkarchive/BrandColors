@@ -65,8 +65,8 @@ else {
 BrandColors includes two sample projects, one written in Objective-C and one written in Swift.
 
 # List of Brands
-``` 
-2014-07-02 08:52:27.036 Demo[94242:39159975] BrandColors contains 81 brands:(
+```  
+2014-07-09 08:58:41.995 Demo[14074:1836638] BrandColors contains 83 brands:(
     Acer,
     Alibaba,
     Adobe,
@@ -108,6 +108,7 @@ BrandColors includes two sample projects, one written in Objective-C and one wri
     LG,
     LinkedIn,
     LINE,
+    Lyft,
     Microsoft,
     Motorola,
     Mozilla,
@@ -133,6 +134,7 @@ BrandColors includes two sample projects, one written in Objective-C and one wri
     Staples,
     "T-Mobile",
     Tumblr,
+    Twitch,
     Twitter,
     Uber,
     Verizon,
@@ -148,7 +150,7 @@ BrandColors includes two sample projects, one written in Objective-C and one wri
     Yelp,
     YouTube,
     ZTE
-)    
+) 
 ```
 
 # Credits
