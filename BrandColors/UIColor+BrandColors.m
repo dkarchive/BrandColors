@@ -95,6 +95,7 @@
                       @"Spotify",
                       @"Sprint",
                       @"SoftBank",
+                      @"SoundCloud",
                       @"Staples",
                       
                       @"T-Mobile",
@@ -402,6 +403,10 @@
     
     if ([self brand:brand matches:@"SoftBank"]) {
         return [UIColor dk_colorWithHexString:@"#BABCBE"];
+    }
+    
+    if ([self brand:brand matches:@"SoundCloud"]) {
+        return [UIColor dk_colorWithHexString:@"#FF8800"];
     }
     
     if ([self brand:brand matches:@"Staples"]) {
