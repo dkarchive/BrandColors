@@ -153,7 +153,7 @@
     }
     
     if ([self brand:brand matches:@"Airbnb"]) {
-        return [UIColor dk_colorWithHexString:@"#00C4FF"];
+        return [UIColor dk_colorWithHexString:@"#FF5A60"];
     }
     
     if ([self brand:brand matches:@"Apple"]) {
