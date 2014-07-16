@@ -45,6 +45,7 @@
                       @"Expedia",
                       
                       @"Facebook",
+                      @"Fitbit",
                       @"Flipkart",
                       @"Foursquare",
                       @"Foxconn",
@@ -247,6 +248,10 @@
     
     if ([self brand:brand matches:@"Facebook"]) {
         return [UIColor dk_colorWithHexString:@"#3b5998"];
+    }
+    
+    if ([self brand:brand matches:@"Fitbit"]) {
+        return [UIColor dk_colorWithHexString:@"#45C2C5"];
     }
     
     if ([self brand:brand matches:@"Flipkart"]) {
