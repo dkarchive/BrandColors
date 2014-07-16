@@ -23,6 +23,7 @@
         self.dataSource = [UIColor bc_brands];
         self.title = @"Brand Colors";
         self.tableView.rowHeight = 54;
+        self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         
         NSLog(@"BrandColors contains %@ brands:%@", @([UIColor bc_brands].count),[UIColor bc_brands]);
         
