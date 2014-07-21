@@ -29,6 +29,7 @@
                       @"Blizzard",
                       @"Box",
                       @"Broadcom",
+                      @"BT",
                       @"BuzzFeed",
                       
                       @"China Mobile",
@@ -45,6 +46,7 @@
                       @"Expedia",
                       
                       @"Facebook",
+                      @"FedEx",
                       @"Fitbit",
                       @"Flipkart",
                       @"Foursquare",
@@ -192,6 +194,10 @@
         return [UIColor dk_colorWithHexString:@"#E81231"];
     }
 
+    if ([brand.lowercaseString isEqualToString:@"bt"]) {
+        return [UIColor dk_colorWithHexString:@"#084897"];
+    }
+    
     if ([self brand:brand matches:@"BuzzFeed"]) {
         return [UIColor dk_colorWithHexString:@"#EE3322"];
     }
@@ -248,6 +254,10 @@
     
     if ([self brand:brand matches:@"Facebook"]) {
         return [UIColor dk_colorWithHexString:@"#3b5998"];
+    }
+
+    if ([self brand:brand matches:@"FedEx"]) {
+        return [UIColor dk_colorWithHexString:@"#4D148C"];
     }
     
     if ([self brand:brand matches:@"Fitbit"]) {
