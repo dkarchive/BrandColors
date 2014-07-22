@@ -25,6 +25,7 @@
                       @"ARM",
                       @"AT&T",
                       
+                      @"BBC",
                       @"Beats",
                       @"Blizzard",
                       @"Box",
@@ -36,6 +37,7 @@
                       @"Cisco",
                       @"Corning",
                       
+                      @"Dell",
                       @"DirecTV",
                       @"Dish Network",
                       @"Dropbox",
@@ -178,6 +180,10 @@
         return [UIColor dk_colorWithHexString:@"#2D96C8"];
     }
     
+    if ([self brand:brand matches:@"BBC"]) {
+        return [UIColor dk_colorWithHexString:@"#333333"];
+    }
+
     if ([self brand:brand matches:@"Beats"]) {
         return [UIColor dk_colorWithHexString:@"#FF0000"];
     }
@@ -214,6 +220,10 @@
         return [UIColor dk_colorWithHexString:@"#00559B"];
     }
     
+    if ([self brand:brand matches:@"Dell"]) {
+        return [UIColor dk_colorWithHexString:@"#0085c3"];
+    }
+
     if ([self brand:brand matches:@"DirecTV"]) {
         return [UIColor dk_colorWithHexString:@"#0097CD"];
     }
