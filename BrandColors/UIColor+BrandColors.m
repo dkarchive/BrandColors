@@ -101,6 +101,7 @@
                       @"Sprint",
                       @"SoftBank",
                       @"SoundCloud",
+                      @"Starbucks",
                       @"Staples",
                       
                       @"T-Mobile",
@@ -436,6 +437,10 @@
     
     if ([self brand:brand matches:@"Staples"]) {
         return [UIColor dk_colorWithHexString:@"#cc0000"];
+    }
+
+    if ([self brand:brand matches:@"Starbucks"]) {
+        return [UIColor dk_colorWithHexString:@"#00592D"];
     }
     
     if (
