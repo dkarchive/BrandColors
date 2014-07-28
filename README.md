@@ -152,7 +152,7 @@ BrandColors includes two sample projects, one written in Objective-C and one wri
     Walmart,
     WeChat,
     WhatsApp,
-    Wordpress,
+    WordPress,
     Xiaomi,
     "Yahoo!",
     Yelp,

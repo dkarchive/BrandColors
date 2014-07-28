@@ -120,7 +120,7 @@
                       @"Walmart",
                       @"WeChat",
                       @"WhatsApp",
-                      @"Wordpress",
+                      @"WordPress",
                       
                       @"Xiaomi",
                       
@@ -499,7 +499,7 @@
         return [UIColor dk_colorWithHexString:@"#34AF23"];
     }
 
-    if ([self brand:brand matches:@"Wordpress"]) {
+    if ([self brand:brand matches:@"WordPress"]) {
         return [UIColor dk_colorWithHexString:@"#464646"];
     }
     
