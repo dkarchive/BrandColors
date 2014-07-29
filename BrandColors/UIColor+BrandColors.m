@@ -128,6 +128,7 @@
                       @"Yelp",
                       @"YouTube",
                       
+                      @"Zillow",
                       @"ZTE",
                       ];
     
@@ -519,6 +520,10 @@
         return [UIColor dk_colorWithHexString:@"#e52d27"];
     }
     
+    if ([self brand:brand matches:@"Zillow"]) {
+        return [UIColor dk_colorWithHexString:@"#0079E4"];
+    }
+
     if ([self brand:brand matches:@"ZTE"]) {
         return [UIColor dk_colorWithHexString:@"#0A50A0"];
     }
