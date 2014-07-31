@@ -442,7 +442,7 @@
     }
 
     if ([self brand:brand matches:@"Starbucks"]) {
-        return [UIColor dk_colorWithHexString:@"#00592D"];
+        return [UIColor dk_colorWithHexString:@"#00704A"];
     }
     
     if (
