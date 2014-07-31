@@ -87,6 +87,7 @@
                       
                       @"Panasonic",
                       @"PayPal",
+                      @"Pinterest",
                       
                       @"Qualcomm",
                       
@@ -105,6 +106,7 @@
                       @"Staples",
                       
                       @"T-Mobile",
+                      @"Tesla",
                       @"Tumblr",
                       @"Twitch",
                       @"Twitter",
@@ -392,7 +394,11 @@
     if ([self brand:brand matches:@"PayPal"]) {
         return [UIColor dk_colorWithHexString:@"#3b7bbf"];
     }
-    
+
+    if ([self brand:brand matches:@"Pinterest"]) {
+        return [UIColor dk_colorWithHexString:@"#cc2127"];
+    }
+
     if ([self brand:brand matches:@"Qualcomm"]) {
         return [UIColor dk_colorWithHexString:@"#1B2021"];
     }
@@ -458,6 +464,10 @@
     
     if ([self brand:brand matches:@"Twitter"]) {
         return [UIColor dk_colorWithHexString:@"#55acee"];
+    }
+
+    if ([self brand:brand matches:@"Tesla"]) {
+        return [UIColor dk_colorWithHexString:@"#CC0000"];
     }
     
     if ([self brand:brand matches:@"Tumblr"]) {
