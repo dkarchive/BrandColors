@@ -88,6 +88,7 @@
                       @"Panasonic",
                       @"PayPal",
                       @"Pinterest",
+                      @"Priceline",
                       
                       @"Qualcomm",
                       
@@ -398,7 +399,11 @@
     if ([self brand:brand matches:@"Pinterest"]) {
         return [UIColor dk_colorWithHexString:@"#cc2127"];
     }
-
+    
+    if ([self brand:brand matches:@"Priceline"]) {
+        return [UIColor dk_colorWithHexString:@"#0A84C1"];
+    }
+    
     if ([self brand:brand matches:@"Qualcomm"]) {
         return [UIColor dk_colorWithHexString:@"#005daa"];
     }
