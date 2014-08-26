@@ -37,15 +37,15 @@ class BrandsTableViewController: UITableViewController {
         
         let brand = self.dataSource[indexPath.row] as String
         
-        cell.text = "\(brand)"
+        cell.textLabel.text = "\(brand)"
         cell.backgroundColor = UIColor.bc_colorForBrand(brand)
         
-        let array:String[] = UIColor.bc_brandsWithLightColor() as String[]
+        let array:[String] = UIColor.bc_brandsWithLightColor() as [String]
         if ( contains(array,brand) ) {
-            cell.textColor = UIColor.blackColor()
+            cell.textLabel.textColor = UIColor.blackColor()
         }
         else {
-            cell.textColor = UIColor.whiteColor()
+            cell.textLabel.textColor = UIColor.whiteColor()
         }
 
         return cell
