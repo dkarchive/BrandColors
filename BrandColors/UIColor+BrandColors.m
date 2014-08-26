@@ -129,6 +129,7 @@
                       
                       @"Yahoo!",
                       @"Yelp",
+                      @"Yo",
                       @"YouTube",
                       
                       @"Zillow",
@@ -531,6 +532,10 @@
         return [UIColor dk_colorWithHexString:@"#c41200"];
     }
 
+    if ([brand.lowercaseString isEqualToString:@"yo"]) {
+        return [UIColor dk_colorWithHexString:@"#9B59B6"];
+    }
+    
     if ([self brand:brand matches:@"YouTube"]) {
         return [UIColor dk_colorWithHexString:@"#e52d27"];
     }
