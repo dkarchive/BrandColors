@@ -25,6 +25,7 @@
                       @"ARM",
                       @"AT&T",
                       
+                      @"Barnes & Noble",
                       @"BBC",
                       @"Beats",
                       @"Blizzard",
@@ -185,6 +186,10 @@
     
     if ([self brand:brand matches:@"AT&T"]) {
         return [UIColor dk_colorWithHexString:@"#2D96C8"];
+    }
+
+    if ([self brand:brand matches:@"Barnes & Noble"]) {
+        return [UIColor dk_colorWithHexString:@"#295A33"];
     }
     
     if ([self brand:brand matches:@"BBC"]) {
