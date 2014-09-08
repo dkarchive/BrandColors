@@ -180,7 +180,7 @@
         return [UIColor dk_colorWithHexString:@"#00c4ff"];
     }
 
-    if ([self brand:brand matches:@"ARM"]) {
+    if ([brand.lowercaseString isEqualToString:@"arm"]) {
         return [UIColor dk_colorWithHexString:@"#0084AB"];
     }
     
