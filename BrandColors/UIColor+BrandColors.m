@@ -28,6 +28,7 @@
                       @"Barnes & Noble",
                       @"BBC",
                       @"Beats",
+                      @"Bing",
                       @"Blizzard",
                       @"Box",
                       @"Broadcom",
@@ -198,6 +199,10 @@
 
     if ([self brand:brand matches:@"Beats"]) {
         return [UIColor dk_colorWithHexString:@"#FF0000"];
+    }
+    
+    if ([brand.lowercaseString isEqualToString:@"bing"]) {
+        return [UIColor dk_colorWithHexString:@"#ffb900"];
     }
     
     if ([self brand:brand matches:@"Blizzard"]) {
