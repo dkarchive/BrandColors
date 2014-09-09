@@ -52,6 +52,7 @@
                       @"Facebook",
                       @"FedEx",
                       @"Fitbit",
+                      @"Flipboard",
                       @"Flipkart",
                       @"Foursquare",
                       @"Foxconn",
@@ -68,6 +69,8 @@
                       @"iHeartRadio",
                       @"Instagram",
                       @"Intel",
+                      
+                      @"Jawbone",
                       
                       @"LG",
                       @"LinkedIn",
@@ -291,6 +294,10 @@
         return [UIColor dk_colorWithHexString:@"#45C2C5"];
     }
     
+    if ([self brand:brand matches:@"Flipboard"]) {
+        return [UIColor dk_colorWithHexString:@"#C10000"];
+    }
+    
     if ([self brand:brand matches:@"Flipkart"]) {
         return [UIColor dk_colorWithHexString:@"#005387"];
     }
@@ -341,6 +348,10 @@
     
     if ([self brand:brand matches:@"Intel"]) {
         return [UIColor dk_colorWithHexString:@"#0071c5"];
+    }
+    
+    if ([self brand:brand matches:@"Jawbone"]) {
+        return [UIColor dk_colorWithHexString:@"#1A1A1A"];
     }
     
     if ([brand.lowercaseString isEqualToString:@"lg"]) {        
