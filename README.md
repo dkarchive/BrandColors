@@ -1,7 +1,7 @@
 BrandColors
 ===========
 
-UIColor Category for Brand Colors
+UIColor Category for over 100 Brand Colors
 
 ![](Assets/screenshot.png)
 
@@ -66,7 +66,7 @@ BrandColors includes two sample projects, one written in Objective-C and one wri
 
 # List of Brands
 ```
-2014-09-09 07:05:59.330 Demo[925:15343] BrandColors contains 100 brands:(
+2014-09-10 07:59:07.462 Demo[71966:15765732] BrandColors contains 103 brands:(
     Acer,
     Alibaba,
     Adobe,
@@ -92,6 +92,7 @@ BrandColors includes two sample projects, one written in Objective-C and one wri
     DirecTV,
     "Dish Network",
     Dropbox,
+    Dyson,
     eBay,
     Ericsson,
     Evernote,
@@ -108,6 +109,7 @@ BrandColors includes two sample projects, one written in Objective-C and one wri
     GoPro,
     HP,
     HTC,
+    "Home Depot",
     Huawei,
     IBM,
     iHeartRadio,
@@ -154,6 +156,7 @@ BrandColors includes two sample projects, one written in Objective-C and one wri
     Verizon,
     Vimeo,
     Vine,
+    Visa,
     Vodafone,
     VSCO,
     Walmart,
@@ -169,7 +172,6 @@ BrandColors includes two sample projects, one written in Objective-C and one wri
     ZTE
 )
 ```
-
 
 # Credits
 Thanks to [Galen Gidman](https://github.com/galengidman)'s http://brandcolors.net

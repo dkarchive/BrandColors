@@ -43,6 +43,7 @@
                       @"DirecTV",
                       @"Dish Network",
                       @"Dropbox",
+                      @"Dyson",
                       
                       @"eBay",
                       @"Ericsson",
@@ -63,6 +64,7 @@
                       
                       @"HP",
                       @"HTC",
+                      @"Home Depot",
                       @"Huawei",
                       
                       @"IBM",
@@ -122,6 +124,7 @@
                       @"Verizon",
                       @"Vimeo",
                       @"Vine",
+                      @"Visa",
                       @"Vodafone",
                       @"VSCO",
                       
@@ -255,6 +258,10 @@
     if ([self brand:brand matches:@"Dropbox"]) {
         return [UIColor dk_colorWithHexString:@"007ee5"];
     }
+
+    if ([self brand:brand matches:@"Dyson"]) {
+        return [UIColor dk_colorWithHexString:@"010101"];
+    }
     
     if ([self brand:brand matches:@"eBay"]) {
         /* idea: random colors.. maybe not so fun in practice
@@ -324,6 +331,10 @@
     
     if ([self brand:brand matches:@"HP"]) {
         return [UIColor dk_colorWithHexString:@"0096d6"];
+    }
+    
+    if ([self brand:brand matches:@"Home Depot"]) {
+        return [UIColor dk_colorWithHexString:@"F86201"];
     }
     
     if ([self brand:brand matches:@"HTC"]) {
@@ -517,6 +528,10 @@
         return [UIColor dk_colorWithHexString:@"00a478"];
     }
 
+    if ([self brand:brand matches:@"Visa"]) {
+        return [UIColor dk_colorWithHexString:@"0157a2"];
+    }
+    
     if ([self brand:brand matches:@"Vodafone"]) {
         return [UIColor dk_colorWithHexString:@"E90000"];
     }
