@@ -95,10 +95,12 @@
                       @"Panasonic",
                       @"PayPal",
                       @"Pinterest",
+                      @"Philips",
                       @"Priceline",
                       
                       @"Qualcomm",
                       
+                      @"Reddit",
                       @"Rovio",
                       @"Rdio",
                       
@@ -150,6 +152,7 @@
 
 + (NSArray*)bc_brandsWithLightColor {
     NSArray *brandsWithLightColor = @[
+                                      @"Reddit",
                                       @"Snapchat",
                                       ];
     return brandsWithLightColor;
@@ -432,6 +435,10 @@
     if ([self brand:brand matches:@"Pinterest"]) {
         return [UIColor dk_colorWithHexString:@"cc2127"];
     }
+
+    if ([self brand:brand matches:@"Philips"]) {
+        return [UIColor dk_colorWithHexString:@"0A5DD7"];
+    }
     
     if ([self brand:brand matches:@"Priceline"]) {
         return [UIColor dk_colorWithHexString:@"0A84C1"];
@@ -441,6 +448,10 @@
         return [UIColor dk_colorWithHexString:@"005daa"];
     }
     
+    if ([self brand:brand matches:@"Reddit"]) {
+        return [UIColor dk_colorWithHexString:@"cee3f8"];
+    }
+
     if ([self brand:brand matches:@"Rovio"]) {
         return [UIColor dk_colorWithHexString:@"C02227"];
     }

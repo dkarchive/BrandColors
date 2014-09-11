@@ -66,7 +66,7 @@ BrandColors includes two sample projects, one written in Objective-C and one wri
 
 # List of Brands
 ```
-2014-09-10 07:59:07.462 Demo[71966:15765732] BrandColors contains 103 brands:(
+2014-09-10 18:34:21.528 Demo[3965:193435] BrandColors contains 105 brands:(
     Acer,
     Alibaba,
     Adobe,
@@ -133,8 +133,10 @@ BrandColors includes two sample projects, one written in Objective-C and one wri
     Panasonic,
     PayPal,
     Pinterest,
+    Philips,
     Priceline,
     Qualcomm,
+    Reddit,
     Rovio,
     Rdio,
     Samsung,
@@ -172,6 +174,7 @@ BrandColors includes two sample projects, one written in Objective-C and one wri
     ZTE
 )
 ```
+
 
 # Credits
 Thanks to [Galen Gidman](https://github.com/galengidman)'s http://brandcolors.net
