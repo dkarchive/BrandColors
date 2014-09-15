@@ -97,6 +97,7 @@
                       @"Pinterest",
                       @"Philips",
                       @"Priceline",
+                      @"Product Hunt",
                       
                       @"Qualcomm",
                       
@@ -442,6 +443,10 @@
     
     if ([self brand:brand matches:@"Priceline"]) {
         return [UIColor dk_colorWithHexString:@"0A84C1"];
+    }
+    
+    if ([self brand:brand matches:@"Product Hunt"]) {
+        return [UIColor dk_colorWithHexString:@"DA552F"];
     }
     
     if ([self brand:brand matches:@"Qualcomm"]) {
