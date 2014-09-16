@@ -102,6 +102,7 @@
                       @"Qualcomm",
                       
                       @"Reddit",
+                      @"Roku",
                       @"Rovio",
                       @"Rdio",
                       
@@ -455,6 +456,10 @@
     
     if ([self brand:brand matches:@"Reddit"]) {
         return [UIColor dk_colorWithHexString:@"cee3f8"];
+    }
+
+    if ([self brand:brand matches:@"Roku"]) {
+        return [UIColor dk_colorWithHexString:@"662E93"];
     }
 
     if ([self brand:brand matches:@"Rovio"]) {
