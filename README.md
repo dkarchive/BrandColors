@@ -42,7 +42,6 @@ facebookColor = [UIColor bc_colorForBrand:@"facebook"];
 UIColor *yahooColor;
 yahooColor = [UIColor bc_colorForBrand:@"yahoo"]; 
 yahooColor = [UIColor bc_colorForBrand:@"Yahoo"]; 
-yahooColor = [UIColor bc_colorForBrand:@"Yahoo!"]; 
 ```
 
 ## Swift
