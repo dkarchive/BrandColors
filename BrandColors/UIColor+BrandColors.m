@@ -249,7 +249,6 @@
             }
         }
         else {
-            
             [list addObject:brandcolor.name];
         }
     }];
