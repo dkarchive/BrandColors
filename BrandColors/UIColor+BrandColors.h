@@ -19,12 +19,6 @@
 
 
 /**
-  Deprecated.
- */
-//+ (NSArray*)bc_brandsWithDarkColor;
-
-
-/**
  List of brands that have a "light" color.
  */
 + (NSArray*)bc_brandsWithLightColor;
@@ -37,5 +31,14 @@
  */
 + (UIColor*)bc_colorForBrand:(NSString*)brand;
 
+@end
 
+
+@interface BrandColors : NSObject
+@end
+
+@interface BrandColor : NSObject
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *hexColor;
+@property (nonatomic) BOOL isLightColor;
 @end

@@ -9,620 +9,254 @@
 #import "UIColor+BrandColors.h"
 
 
-@implementation UIColor (BrandColors)
+@implementation BrandColor
 
-#pragma mark - Public
-
-+ (NSArray*)bc_brands {
-    NSArray *list = @[
-                      @"Acer",
-                      @"Alibaba",
-                      @"Adobe",
-                      @"Airbnb",
-                      @"Amazon",
-                      @"AOL",
-                      @"Apple",
-                      @"ARM",
-                      @"AT&T",
-                      
-                      @"Barnes & Noble",
-                      @"BBC",
-                      @"Beats",
-                      @"Bing",
-                      @"Blizzard",
-                      @"Box",
-                      @"Broadcom",
-                      @"BT",
-                      @"BuzzFeed",
-                      
-                      @"China Mobile",
-                      @"Cisco",
-                      @"Corning",
-                      
-                      @"Dell",
-                      @"DirecTV",
-                      @"Dish Network",
-                      @"Dropbox",
-                      @"Dyson",
-                      
-                      @"eBay",
-                      @"Ericsson",
-                      @"Evernote",
-                      @"Expedia",
-                      
-                      @"Facebook",
-                      @"FedEx",
-                      @"Fitbit",
-                      @"Flipboard",
-                      @"Flipkart",
-                      @"Foursquare",
-                      @"Foxconn",
-                      
-                      @"General Electric",
-                      @"Google",
-                      @"GoPro",
-                      
-                      @"HP",
-                      @"HTC",
-                      @"Home Depot",
-                      @"Huawei",
-                      
-                      @"IBM",
-                      @"iHeartRadio",
-                      @"Instagram",
-                      @"Intel",
-                      
-                      @"Jawbone",
-                      
-                      @"LG",
-                      @"LinkedIn",
-                      @"LINE",
-                      @"Lyft",
-                      
-                      @"Microsoft",
-                      @"Motorola",
-                      @"Mozilla",
-                      
-                      @"Netflix",
-                      @"Nest",
-                      @"Nintendo",
-                      @"Nokia",
-                      @"NTT DoCoMo",
-                      @"NVIDIA",
-                      
-                      @"Opera",
-                      
-                      @"Panasonic",
-                      @"PayPal",
-                      @"Pinterest",
-                      @"Philips",
-                      @"Priceline",
-                      @"Product Hunt",
-                      
-                      @"Qualcomm",
-                      
-                      @"Reddit",
-                      @"Roku",
-                      @"Rovio",
-                      @"Rdio",
-                      
-                      @"Samsung",
-                      @"Shazam",
-                      @"Skype",
-                      @"Snapchat",
-                      @"Spotify",
-                      @"Sprint",
-                      @"SoftBank",
-                      @"SoundCloud",
-                      @"Starbucks",
-                      @"Staples",
-                      
-                      @"T-Mobile",
-                      @"Tesla",
-                      @"Tumblr",
-                      @"Twitch",
-                      @"Twitter",
-                      
-                      @"Uber",
-                      
-                      @"Verizon",
-                      @"Vimeo",
-                      @"Vine",
-                      @"Visa",
-                      @"Vodafone",
-                      @"VSCO",
-                      
-                      @"Walmart",
-                      @"WeChat",
-                      @"WhatsApp",
-                      @"WordPress",
-                      
-                      @"Xiaomi",
-                      
-                      @"Yahoo!",
-                      @"Yelp",
-                      @"Yo",
-                      @"YouTube",
-                      
-                      @"Zillow",
-                      @"ZTE",
-                      ];
-    
-    return list;
-}
-
-
-+ (NSArray*)bc_brandsWithLightColor {
-    NSArray *brandsWithLightColor = @[
-                                      @"Reddit",
-                                      @"Snapchat",
-                                      ];
-    return brandsWithLightColor;
-}
-
-
-+ (UIColor*)bc_colorForBrand:(NSString*)brand {
-    UIColor *brandColor = BC_DEFAULT_COLOR;
-    
-    if ([self brand:brand matches:@"Acer"]) {
-        return [UIColor dk_colorWithHexString:@"83b81a"];
-    }
-    
-    if ([self brand:brand matches:@"Alibaba"]) {
-        return [UIColor dk_colorWithHexString:@"FF7300"];
-    }
-    
-    if ([self brand:brand matches:@"Adobe"]) {
-        return [UIColor dk_colorWithHexString:@"ff0000"];
-    }
-    
-    if ([self brand:brand matches:@"Airbnb"]) {
-        return [UIColor dk_colorWithHexString:@"FF5A60"];
-    }
-    
-    if ([self brand:brand matches:@"Apple"]) {
-        return [UIColor dk_colorWithHexString:@"777777"];
-    }
-
-    if ([self brand:brand matches:@"Amazon"]) {
-        return [UIColor dk_colorWithHexString:@"ff9900"];
-    }
-    
-    if ([self brand:brand matches:@"AOL"]) {
-        return [UIColor dk_colorWithHexString:@"00c4ff"];
-    }
-
-    if ([brand.lowercaseString isEqualToString:@"arm"]) {
-        return [UIColor dk_colorWithHexString:@"0084AB"];
-    }
-    
-    if ([self brand:brand matches:@"AT&T"]) {
-        return [UIColor dk_colorWithHexString:@"2D96C8"];
-    }
-
-    if ([self brand:brand matches:@"Barnes & Noble"]) {
-        return [UIColor dk_colorWithHexString:@"295A33"];
-    }
-    
-    if ([self brand:brand matches:@"BBC"]) {
-        return [UIColor dk_colorWithHexString:@"333333"];
-    }
-
-    if ([self brand:brand matches:@"Beats"]) {
-        return [UIColor dk_colorWithHexString:@"FF0000"];
-    }
-    
-    if ([brand.lowercaseString isEqualToString:@"bing"]) {
-        return [UIColor dk_colorWithHexString:@"ffb900"];
-    }
-    
-    if ([self brand:brand matches:@"Blizzard"]) {
-        return [UIColor dk_colorWithHexString:@"01B2F1"];
-    }    
-    
-    if ([brand.lowercaseString isEqualToString:@"box"]) {
-        return [UIColor dk_colorWithHexString:@"00aeef"];
-    }
-    
-    if ([self brand:brand matches:@"Broadcom"]) {
-        return [UIColor dk_colorWithHexString:@"E81231"];
-    }
-
-    if ([brand.lowercaseString isEqualToString:@"bt"]) {
-        return [UIColor dk_colorWithHexString:@"084897"];
-    }
-    
-    if ([self brand:brand matches:@"BuzzFeed"]) {
-        return [UIColor dk_colorWithHexString:@"EE3322"];
-    }
-
-    if ([self brand:brand matches:@"China Mobile"]) {
-        return [UIColor dk_colorWithHexString:@"1d64b8"];
-    }
-
-    if ([self brand:brand matches:@"Cisco"]) {
-        return [UIColor dk_colorWithHexString:@"11495E"];
-    }
-
-    if ([self brand:brand matches:@"Corning"]) {
-        return [UIColor dk_colorWithHexString:@"00559B"];
-    }
-    
-    if ([self brand:brand matches:@"Dell"]) {
-        return [UIColor dk_colorWithHexString:@"0085c3"];
-    }
-
-    if ([self brand:brand matches:@"DirecTV"]) {
-        return [UIColor dk_colorWithHexString:@"0097CD"];
-    }
-    
-    if ([self brand:brand matches:@"Dish Network"]) {
-        return [UIColor dk_colorWithHexString:@"DA121D"];
-    }
-    
-    if ([self brand:brand matches:@"Dropbox"]) {
-        return [UIColor dk_colorWithHexString:@"007ee5"];
-    }
-
-    if ([self brand:brand matches:@"Dyson"]) {
-        return [UIColor dk_colorWithHexString:@"010101"];
-    }
-    
-    if ([self brand:brand matches:@"eBay"]) {
-        /* idea: random colors.. maybe not so fun in practice
-         NSArray *ebayColors = @[
-         @"e53238",
-         @"0064d2",
-         @"f5af02",
-         @"86b817",
-         ];
-         
-         return [UIColor dk_colorWithHexString: ebayColors[arc4random()%ebayColors.count] ];
-         */
-        return [UIColor dk_colorWithHexString:@"e53238"];
-    }
-
-    if ([self brand:brand matches:@"Ericsson"]) {
-        return [UIColor dk_colorWithHexString:@"002561"];
-    }
-
-    if ([self brand:brand matches:@"Evernote"]) {
-        return [UIColor dk_colorWithHexString:@"7ac142"];
-    }
-
-    if ([self brand:brand matches:@"Expedia"]) {
-        return [UIColor dk_colorWithHexString:@"003050"];
-    }
-    
-    if ([self brand:brand matches:@"Facebook"]) {
-        return [UIColor dk_colorWithHexString:@"3b5998"];
-    }
-
-    if ([self brand:brand matches:@"FedEx"]) {
-        return [UIColor dk_colorWithHexString:@"4D148C"];
-    }
-    
-    if ([self brand:brand matches:@"Fitbit"]) {
-        return [UIColor dk_colorWithHexString:@"45C2C5"];
-    }
-    
-    if ([self brand:brand matches:@"Flipboard"]) {
-        return [UIColor dk_colorWithHexString:@"C10000"];
-    }
-    
-    if ([self brand:brand matches:@"Flipkart"]) {
-        return [UIColor dk_colorWithHexString:@"005387"];
-    }
-    
-    if ([self brand:brand matches:@"Foxconn"]) {
-        return [UIColor dk_colorWithHexString:@"1E5AA0"];
-    }
-    
-    if ([self brand:brand matches:@"Foursquare"]) {
-        return [UIColor dk_colorWithHexString:@"0cbadf"];
-    }
-
-    if ([self brand:brand matches:@"General Electric"]) {
-        return [UIColor dk_colorWithHexString:@"019DDD"];
-    }
-
-    if ([self brand:brand matches:@"Google"]) {
-        return [UIColor dk_colorWithHexString:@"4285f4"];
-    }
-
-    if ([self brand:brand matches:@"GoPro"]) {
-        return [UIColor dk_colorWithHexString:@"009EE2"];
-    }
-    
-    if ([self brand:brand matches:@"HP"]) {
-        return [UIColor dk_colorWithHexString:@"0096d6"];
-    }
-    
-    if ([self brand:brand matches:@"Home Depot"]) {
-        return [UIColor dk_colorWithHexString:@"F86201"];
-    }
-    
-    if ([self brand:brand matches:@"HTC"]) {
-        return [UIColor dk_colorWithHexString:@"69B40F"];
-    }
-
-    if ([self brand:brand matches:@"Huawei"]) {
-        return [UIColor dk_colorWithHexString:@"D62D24"];
-    }
-    
-    if ([self brand:brand matches:@"IBM"]) {
-        return [UIColor dk_colorWithHexString:@"003e6a"];
-    }
-    
-    if ([self brand:brand matches:@"iHeartRadio"]) {
-        return [UIColor dk_colorWithHexString:@"BC1C10"];
-    }
-
-    if ([self brand:brand matches:@"Instagram"]) {
-        return [UIColor dk_colorWithHexString:@"3f729b"];
-    }
-    
-    if ([self brand:brand matches:@"Intel"]) {
-        return [UIColor dk_colorWithHexString:@"0071c5"];
-    }
-    
-    if ([self brand:brand matches:@"Jawbone"]) {
-        return [UIColor dk_colorWithHexString:@"1A1A1A"];
-    }
-    
-    if ([brand.lowercaseString isEqualToString:@"lg"]) {        
-        return [UIColor dk_colorWithHexString:@"B20E50"];
-    }
-    
-    if ([self brand:brand matches:@"LinkedIn"]) {
-        return [UIColor dk_colorWithHexString:@"0e76a8"];
-    }
-    
-    if ([brand.lowercaseString isEqualToString:@"line"]) {
-        return [UIColor dk_colorWithHexString:@"1DCD00"];
-    }
-
-    if ([self brand:brand matches:@"Lyft"]) {
-        return [UIColor dk_colorWithHexString:@"00B4AE"];
-    }
-    
-    if ([self brand:brand matches:@"Microsoft"]) {
-        return [UIColor dk_colorWithHexString:@"00a1f1"];
-    }
-    
-    if ([self brand:brand matches:@"Motorola"]) {
-        return [UIColor dk_colorWithHexString:@"5C92FA"];
-    }
-
-    if ([self brand:brand matches:@"Mozilla"]) {
-        return [UIColor dk_colorWithHexString:@"C34139"];
-    }
-    
-    if ([brand.lowercaseString isEqualToString:@"nest"]) {
-        return [UIColor dk_colorWithHexString:@"1EB6DC"];
-    }
-    
-    if ([self brand:brand matches:@"Netflix"]) {
-        return [UIColor dk_colorWithHexString:@"b9070a"];
-    }
-    
-    if ([self brand:brand matches:@"Nintendo"]) {
-        return [UIColor dk_colorWithHexString:@"8C8C8C"];
-    }
-
-    if ([self brand:brand matches:@"Nokia"]) {
-        return [UIColor dk_colorWithHexString:@"183693"];
-    }
-
-    if ([self brand:brand matches:@"NTT DoCoMo"]) {
-        return [UIColor dk_colorWithHexString:@"CC0033"];
-    }
-
-    if ([self brand:brand matches:@"NVIDIA"]) {
-        return [UIColor dk_colorWithHexString:@"77B900"];
-    }
-    
-    if ([brand.lowercaseString isEqualToString:@"opera"]) {
-        return [UIColor dk_colorWithHexString:@"cc0f16"];
-    }
-    
-    if ([self brand:brand matches:@"Panasonic"]) {
-        return [UIColor dk_colorWithHexString:@"0438C2"];
-    }
-
-    if ([self brand:brand matches:@"PayPal"]) {
-        return [UIColor dk_colorWithHexString:@"3b7bbf"];
-    }
-
-    if ([self brand:brand matches:@"Pinterest"]) {
-        return [UIColor dk_colorWithHexString:@"cc2127"];
-    }
-
-    if ([self brand:brand matches:@"Philips"]) {
-        return [UIColor dk_colorWithHexString:@"0A5DD7"];
-    }
-    
-    if ([self brand:brand matches:@"Priceline"]) {
-        return [UIColor dk_colorWithHexString:@"0A84C1"];
-    }
-    
-    if ([self brand:brand matches:@"Product Hunt"]) {
-        return [UIColor dk_colorWithHexString:@"DA552F"];
-    }
-    
-    if ([self brand:brand matches:@"Qualcomm"]) {
-        return [UIColor dk_colorWithHexString:@"005daa"];
-    }
-    
-    if ([self brand:brand matches:@"Reddit"]) {
-        return [UIColor dk_colorWithHexString:@"cee3f8"];
-    }
-
-    if ([self brand:brand matches:@"Roku"]) {
-        return [UIColor dk_colorWithHexString:@"662E93"];
-    }
-
-    if ([self brand:brand matches:@"Rovio"]) {
-        return [UIColor dk_colorWithHexString:@"C02227"];
-    }
-    
-    if ([self brand:brand matches:@"Rdio"]) {
-        return [UIColor dk_colorWithHexString:@"007dc3"];
-    }
-
-    if ([self brand:brand matches:@"Samsung"]) {
-        return [UIColor dk_colorWithHexString:@"0c4da2"];
-    }
-    
-    if ([self brand:brand matches:@"Shazam"]) {
-        return [UIColor dk_colorWithHexString:@"1B87E3"];
-    }
-
-    if ([self brand:brand matches:@"Skype"]) {
-        return [UIColor dk_colorWithHexString:@"00aff0"];
-    }
-
-    if ([self brand:brand matches:@"Snapchat"]) {
-        return [UIColor dk_colorWithHexString:@"FFFC00"];
-    }
-    
-    if ([self brand:brand matches:@"Spotify"]) {
-        return [UIColor dk_colorWithHexString:@"81b71a"];
-    }
-    
-    if ([self brand:brand matches:@"Sprint"]) {
-        return [UIColor dk_colorWithHexString:@"fee100"];
-    }
-    
-    if ([self brand:brand matches:@"SoftBank"]) {
-        return [UIColor dk_colorWithHexString:@"fbbd09"];
-    }
-    
-    if ([self brand:brand matches:@"SoundCloud"]) {
-        return [UIColor dk_colorWithHexString:@"FF8800"];
-    }
-    
-    if ([self brand:brand matches:@"Staples"]) {
-        return [UIColor dk_colorWithHexString:@"cc0000"];
-    }
-
-    if ([self brand:brand matches:@"Starbucks"]) {
-        return [UIColor dk_colorWithHexString:@"00704A"];
-    }
-    
-    if (
-        ([self brand:brand matches:@"T-Mobile"]) ||
-        ([self brand:brand matches:@"TMobile"])
-        ) {
-        return [UIColor dk_colorWithHexString:@"ea0a8e"];
-    }
-
-    if ([self brand:brand matches:@"Twitch"]) {
-        return [UIColor dk_colorWithHexString:@"6441a5"];
-    }
-    
-    if ([self brand:brand matches:@"Twitter"]) {
-        return [UIColor dk_colorWithHexString:@"55acee"];
-    }
-
-    if ([self brand:brand matches:@"Tesla"]) {
-        return [UIColor dk_colorWithHexString:@"CC0000"];
-    }
-    
-    if ([self brand:brand matches:@"Tumblr"]) {
-        return [UIColor dk_colorWithHexString:@"34526f"];
-    }
-    
-    if ([self brand:brand matches:@"Uber"]) {
-        return [UIColor dk_colorWithHexString:@"1CA8C3"];
-    }
-    
-    if ([self brand:brand matches:@"Verizon"]) {
-        return [UIColor dk_colorWithHexString:@"ef1d1d"];
-    }
-    
-    if ([self brand:brand matches:@"Vimeo"]) {
-        return [UIColor dk_colorWithHexString:@"44bbff"];
-    }
-    
-    if ([self brand:brand matches:@"Vine"]) {
-        return [UIColor dk_colorWithHexString:@"00a478"];
-    }
-
-    if ([self brand:brand matches:@"Visa"]) {
-        return [UIColor dk_colorWithHexString:@"0157a2"];
-    }
-    
-    if ([self brand:brand matches:@"Vodafone"]) {
-        return [UIColor dk_colorWithHexString:@"E90000"];
-    }
-    
-    if ([self brand:brand matches:@"VSCO"]) {
-        return [UIColor dk_colorWithHexString:@"AAA94C"];
-    }
-
-    if ([self brand:brand matches:@"Walmart"]) {
-        return [UIColor dk_colorWithHexString:@"005CB0"];
-    }
-    
-    if ([self brand:brand matches:@"WeChat"]) {
-        return [UIColor dk_colorWithHexString:@"93D034"];
-    }
-    
-    if ([self brand:brand matches:@"WhatsApp"]) {
-        return [UIColor dk_colorWithHexString:@"34AF23"];
-    }
-
-    if ([self brand:brand matches:@"WordPress"]) {
-        return [UIColor dk_colorWithHexString:@"464646"];
-    }
-    
-    if ([self brand:brand matches:@"Xiaomi"]) {
-        return [UIColor dk_colorWithHexString:@"FF4A03"];
-    }
-    
-    if ([self brand:brand matches:@"Yahoo"]) {
-        return [UIColor dk_colorWithHexString:@"720e9e"];
-    }
-    
-    if ([self brand:brand matches:@"Yelp"]) {
-        return [UIColor dk_colorWithHexString:@"c41200"];
-    }
-
-    if ([brand.lowercaseString isEqualToString:@"yo"]) {
-        return [UIColor dk_colorWithHexString:@"9B59B6"];
-    }
-    
-    if ([self brand:brand matches:@"YouTube"]) {
-        return [UIColor dk_colorWithHexString:@"e52d27"];
-    }
-    
-    if ([self brand:brand matches:@"Zillow"]) {
-        return [UIColor dk_colorWithHexString:@"0079E4"];
-    }
-
-    if ([self brand:brand matches:@"ZTE"]) {
-        return [UIColor dk_colorWithHexString:@"0A50A0"];
-    }
++ (BrandColor*)newColorWithName:(NSString*)name hexColor:(NSString*)hexColor isLightColor:(BOOL)isLightColor {
+    BrandColor *brandColor = [[BrandColor alloc] init];
+    brandColor.name = name;
+    brandColor.hexColor = hexColor.lowercaseString;
+    brandColor.isLightColor = isLightColor;
     
     return brandColor;
 }
 
 
-#pragma mark - Private
-
-+ (BOOL)brand:(NSString*)brand matches:(NSString *)string {
-    brand = brand.lowercaseString;
-    string = string.lowercaseString;
-    return !NSEqualRanges([brand rangeOfString:string], NSMakeRange(NSNotFound, 0));
++ (BrandColor*)newColorWithName:(NSString*)name hexColor:(NSString*)hexColor {
+    return [BrandColor newColorWithName:name hexColor:hexColor isLightColor:NO];
 }
 
+
+@end
+
+
+@implementation NSMutableDictionary (DK)
+
+- (void)dk_updateKey:(NSString*)key  hexColor:(NSString*)hexColor isLightColor:(BOOL)isLightColor {
+    self[key.lowercaseString] = [BrandColor newColorWithName:key hexColor:hexColor isLightColor:isLightColor];
+}
+
+
+- (void)dk_updateKey:(NSString*)key hexColor:(NSString*)hexColor {
+    [self dk_updateKey:key hexColor:hexColor isLightColor:NO];
+}
+
+
+@end
+
+
+@interface BrandColors ()
+@property (nonatomic, strong) NSDictionary *colorMap;
+@end
+
+
+@implementation BrandColors
+
+- (id)init {
+    self = [super init];
+    if (self) {
+        [self setupColorMap];
+    }
+    return self;
+}
+
+
+- (void)setupColorMap {
+    NSMutableDictionary *map = [[NSMutableDictionary alloc] init];
+    
+    [map dk_updateKey:@"Acer" hexColor:@"83b81a"];
+    [map dk_updateKey:@"Adobe" hexColor:@"ff0000"];
+    [map dk_updateKey:@"Airbnb" hexColor:@"FF5A60"];
+    [map dk_updateKey:@"Alibaba" hexColor: @"FF7300"];
+    [map dk_updateKey:@"Amazon" hexColor:@"ff9900"];
+    [map dk_updateKey:@"Apple" hexColor:@"777777"];
+    [map dk_updateKey:@"AOL" hexColor:@"00c4ff"];
+    [map dk_updateKey:@"ARM" hexColor:@"0084AB"];
+    [map dk_updateKey:@"AT&T" hexColor:@"2D96C8"];
+    
+    [map dk_updateKey:@"Barnes & Noble"hexColor:@"295A33"];
+    [map dk_updateKey:@"BBC"hexColor:@"333333"];
+    [map dk_updateKey:@"Beats"hexColor:@"FF0000"];
+    [map dk_updateKey:@"Bing"hexColor:@"ffb900"];
+    [map dk_updateKey:@"Blizzard"hexColor:@"01B2F1"];
+    [map dk_updateKey:@"Box"hexColor:@"00aeef"];
+    [map dk_updateKey:@"Broadcom"hexColor:@"E81231"];
+    [map dk_updateKey:@"BT"hexColor:@"084897"];
+    [map dk_updateKey:@"BuzzFeed"hexColor:@"EE3322"];
+    [map dk_updateKey:@"China Mobile"hexColor:@"1d64b8"];
+    
+    [map dk_updateKey:@"Cisco"hexColor:@"11495E"];
+    [map dk_updateKey:@"Corning"hexColor:@"00559B"];
+    
+    [map dk_updateKey:@"Dell"hexColor:@"0085c3"];
+    [map dk_updateKey:@"DirecTV"hexColor:@"0097CD"];
+    [map dk_updateKey:@"Dish Network"hexColor:@"DA121D"];
+    [map dk_updateKey:@"Dropbox"hexColor:@"007ee5"];
+    [map dk_updateKey:@"Dyson"hexColor:@"010101"];
+    
+    [map dk_updateKey:@"eBay" hexColor:@"e53238"];
+    [map dk_updateKey:@"Ericsson"hexColor:@"002561"];
+    [map dk_updateKey:@"Evernote"hexColor:@"7ac142"];
+    [map dk_updateKey:@"Expedia"hexColor:@"003050"];
+    
+    [map dk_updateKey:@"Facebook"hexColor:@"3b5998"];
+    [map dk_updateKey:@"FedEx"hexColor:@"4D148C"];
+    [map dk_updateKey:@"Fitbit"hexColor:@"45C2C5"];
+    [map dk_updateKey:@"Flipboard"hexColor:@"C10000"];
+    [map dk_updateKey:@"Flipkart"hexColor:@"005387"];
+    [map dk_updateKey:@"Foxconn"hexColor:@"1E5AA0"];
+    [map dk_updateKey:@"Foursquare"hexColor:@"0cbadf"];
+    
+    [map dk_updateKey:@"General Electric"hexColor:@"019DDD"];
+    [map dk_updateKey:@"Google"hexColor:@"4285f4"];
+    [map dk_updateKey:@"GoPro"hexColor:@"009EE2"];
+    
+    [map dk_updateKey:@"HP"hexColor:@"0096d6"];
+    [map dk_updateKey:@"Home Depot"hexColor:@"F86201"];
+    [map dk_updateKey:@"HTC"hexColor:@"69B40F"];
+    [map dk_updateKey:@"Huawei"hexColor:@"D62D24"];
+    
+    [map dk_updateKey:@"IBM"hexColor:@"003e6a"];
+    [map dk_updateKey:@"iHeartRadio"hexColor:@"BC1C10"];
+    [map dk_updateKey:@"Instagram"hexColor:@"3f729b"];
+    [map dk_updateKey:@"Intel"hexColor:@"0071c5"];
+    
+    [map dk_updateKey:@"Jawbone"hexColor:@"1A1A1A"];
+    
+    [map dk_updateKey:@"LG" hexColor:@"B20E50"];
+    [map dk_updateKey:@"LinkedIn"hexColor:@"0e76a8"];
+    [map dk_updateKey:@"LINE"hexColor:@"1DCD00"];
+    [map dk_updateKey:@"Lyft"hexColor:@"00B4AE"];
+    [map dk_updateKey:@"Microsoft"hexColor:@"00a1f1"];
+    [map dk_updateKey:@"Motorola"hexColor:@"5C92FA"];
+    [map dk_updateKey:@"Mozilla"hexColor:@"C34139"];
+    
+    [map dk_updateKey:@"Nest"hexColor:@"1EB6DC"];
+    [map dk_updateKey:@"Netflix"hexColor:@"b9070a"];
+    [map dk_updateKey:@"Nintendo"hexColor:@"8C8C8C"];
+    [map dk_updateKey:@"Nokia"hexColor:@"183693"];
+    [map dk_updateKey:@"NTT DoCoMo"hexColor:@"CC0033"];
+    [map dk_updateKey:@"NVIDIA"hexColor:@"77B900"];
+    
+    [map dk_updateKey:@"Opera"hexColor:@"cc0f16"];
+ 
+    [map dk_updateKey:@"Panasonic"hexColor:@"0438C2"];
+    [map dk_updateKey:@"PayPal"hexColor:@"3b7bbf"];
+    [map dk_updateKey:@"Pinterest"hexColor:@"cc2127"];
+    [map dk_updateKey:@"Philips"hexColor:@"0A5DD7"];
+    [map dk_updateKey:@"Priceline"hexColor:@"0A84C1"];
+    [map dk_updateKey:@"Product Hunt"hexColor:@"DA552F"];
+    
+    [map dk_updateKey:@"Qualcomm"hexColor:@"005daa"];
+    
+    [map dk_updateKey:@"Reddit"hexColor:@"cee3f8" isLightColor:YES];
+    [map dk_updateKey:@"Roku"hexColor:@"662E93"];
+    [map dk_updateKey:@"Rovio"hexColor:@"C02227"];
+    [map dk_updateKey:@"Rdio"hexColor:@"007dc3"];
+    
+    [map dk_updateKey:@"Samsung"hexColor:@"0c4da2"];
+    [map dk_updateKey:@"Snapchat" hexColor:@"FFFC00" isLightColor:YES];
+    [map dk_updateKey:@"Shazam"hexColor:@"1B87E3"];
+    [map dk_updateKey:@"Skype"hexColor:@"00aff0"];
+    [map dk_updateKey:@"Spotify"hexColor:@"81b71a"];
+    [map dk_updateKey:@"Sprint"hexColor:@"fee100"];
+    [map dk_updateKey:@"SoftBank"hexColor:@"fbbd09"];
+    [map dk_updateKey:@"SoundCloud"hexColor:@"FF8800"];
+    [map dk_updateKey:@"Staples"hexColor:@"cc0000"];
+    [map dk_updateKey:@"Starbucks"hexColor:@"00704A"];
+    
+    [map dk_updateKey:@"T-Mobile" hexColor:@"ea0a8e"];
+    [map dk_updateKey:@"TMobile" hexColor:@"ea0a8e"];
+    [map dk_updateKey:@"Twitch"hexColor:@"6441a5"];
+    [map dk_updateKey:@"Twitter"hexColor:@"55acee"];
+    [map dk_updateKey:@"Tesla"hexColor:@"CC0000"];
+    [map dk_updateKey:@"Tumblr"hexColor:@"34526f"];
+    
+    [map dk_updateKey:@"Uber"hexColor:@"1CA8C3"];
+    
+    [map dk_updateKey:@"Verizon"hexColor:@"ef1d1d"];
+    [map dk_updateKey:@"Vimeo"hexColor:@"44bbff"];
+    [map dk_updateKey:@"Vine"hexColor:@"00a478"];
+    [map dk_updateKey:@"Visa"hexColor:@"0157a2"];
+    [map dk_updateKey:@"Vodafone"hexColor:@"E90000"];
+    [map dk_updateKey:@"VSCO"hexColor:@"AAA94C"];
+    
+    [map dk_updateKey:@"Walmart"hexColor:@"005CB0"];
+    [map dk_updateKey:@"WeChat"hexColor:@"93D034"];
+    [map dk_updateKey:@"WhatsApp"hexColor:@"34AF23"];
+    [map dk_updateKey:@"WordPress"hexColor:@"464646"];
+    
+    [map dk_updateKey:@"Xiaomi"hexColor:@"FF4A03"];
+    
+    [map dk_updateKey:@"Yahoo"hexColor:@"720e9e"];
+    [map dk_updateKey:@"Yelp"hexColor:@"c41200"];
+    [map dk_updateKey:@"Yo" hexColor:@"9B59B6"];
+    [map dk_updateKey:@"YouTube"hexColor:@"e52d27"];
+    
+    [map dk_updateKey:@"Zillow"hexColor:@"0079E4"];
+    [map dk_updateKey:@"ZTE"hexColor:@"0A50A0"];
+    
+    self.colorMap = map.copy;
+}
+
+
+@end
+
+
+@implementation UIColor (BrandColors)
+
+#pragma mark - Public
+
++ (NSArray*)bc_brands {
+    return [UIColor dk_listIsLightColor:NO];
+}
+
+
++ (NSArray*)bc_brandsWithLightColor {
+    return [UIColor dk_listIsLightColor:YES];
+}
+
+
++ (UIColor*)bc_colorForBrand:(NSString*)brand {
+    BrandColors *brandColors = [[BrandColors alloc] init];
+    BrandColor *bc_object = [brandColors.colorMap objectForKey:brand.lowercaseString];
+    
+    if (!bc_object) {
+        return BC_DEFAULT_COLOR;
+    }
+    
+    return [UIColor dk_colorWithHexString:bc_object.hexColor];
+}
+
+
+#pragma mark - Private
 
 + (UIColor *)dk_colorWithHexString:(NSString *)hexString {
     unsigned rgbValue = 0;
     NSScanner *scanner = [NSScanner scannerWithString:hexString];
     [scanner scanHexInt:&rgbValue];
     return [UIColor colorWithRed:((rgbValue & 0xFF0000) >> 16)/255.0 green:((rgbValue & 0xFF00) >> 8)/255.0 blue:(rgbValue & 0xFF)/255.0 alpha:1.0];
+}
+
+
++ (NSArray*)dk_listIsLightColor:(BOOL)isLightColor {
+    
+    BrandColors *brandcolors = [[BrandColors alloc] init];
+    NSMutableArray *list = [[NSMutableArray alloc] init];
+    [brandcolors.colorMap enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
+        BrandColor *bc = obj;
+        
+        if (isLightColor) {
+            if (bc.isLightColor) {
+                [list addObject:bc.name];
+            }
+        }
+        else {
+            
+            [list addObject:bc.name];
+        }
+    }];
+    
+    return [list.copy sortedArrayUsingSelector:@selector(caseInsensitiveCompare:)];
 }
 
 

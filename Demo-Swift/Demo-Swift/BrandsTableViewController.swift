@@ -9,9 +9,9 @@
 import UIKit
 
 class BrandsTableViewController: UITableViewController {
-
+    
     let dataSource:NSArray = UIColor.bc_brands()
-  
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -24,15 +24,16 @@ class BrandsTableViewController: UITableViewController {
         println("BrandColors contains \(UIColor.bc_brands().count) brands: \(UIColor.bc_brands())")
         println("BrandColors also has a list of brands with a light color: \(UIColor.bc_brandsWithLightColor())")
     }
-
+    
     // #pragma mark - Table view data source
-
+    
     override func tableView(tableView: UITableView?, numberOfRowsInSection section: Int) -> Int {
         // Return the number of rows in the section.
         return self.dataSource.count
     }
     
-    override func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
+    
+    override func tableView(tableView: UITableView, cellForRowAtIndexPath indexPath: NSIndexPath) -> UITableViewCell {
         var cell:UITableViewCell = tableView.dequeueReusableCellWithIdentifier("cell", forIndexPath: indexPath) as UITableViewCell
         
         let brand = self.dataSource[indexPath.row] as String
@@ -47,7 +48,9 @@ class BrandsTableViewController: UITableViewController {
         else {
             cell.textLabel.textColor = UIColor.whiteColor()
         }
-
+        
         return cell
+        
     }
+    
 }

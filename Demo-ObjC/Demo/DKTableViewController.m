@@ -15,8 +15,7 @@
 
 @implementation DKTableViewController
 
-- (id)initWithStyle:(UITableViewStyle)style
-{
+- (id)initWithStyle:(UITableViewStyle)style {
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
@@ -35,42 +34,25 @@
 
 #pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
- 
-    // Return the number of sections.
-    return 1;
-}
-
-- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-{
- 
-    // Return the number of rows in the section.
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return self.dataSource.count;
 }
 
 
-- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-{
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     NSString *cellId = @"cellId";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:cellId];
     if (!cell) {
         cell = [[UITableViewCell alloc] init];
-        cell.separatorInset = UIEdgeInsetsZero;
     }
-    NSString *brand = self.dataSource[indexPath.row];
-
-    cell.textLabel.text = brand;
-    cell.backgroundColor = [UIColor bc_colorForBrand:brand];
     
-    if ([[UIColor bc_brandsWithLightColor] containsObject:brand]) {
-        cell.textLabel.textColor = [UIColor blackColor];
-    }
-    else {
-        cell.textLabel.textColor = [UIColor whiteColor];
-    }
+    NSString *brand = self.dataSource[indexPath.row];
+    cell.backgroundColor = [UIColor bc_colorForBrand:brand];
+    cell.textLabel.text = brand;
+    cell.textLabel.textColor = ([[UIColor bc_brandsWithLightColor] containsObject:brand]) ? [UIColor blackColor]:[UIColor whiteColor];
     
     return cell;
 }
+
 
 @end
