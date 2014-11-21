@@ -218,13 +218,18 @@
 
 + (UIColor*)bc_colorForBrand:(NSString*)brand {
     BrandColors *brandColors = [[BrandColors alloc] init];
-    BrandColor *bc_object = [brandColors.colorMap objectForKey:brand.lowercaseString];
     
-    if (!bc_object) {
+    NSString *filter = [NSString stringWithFormat:@"'%@' CONTAINS SELF", brand.lowercaseString];
+    NSPredicate *predicate = [NSPredicate predicateWithFormat:filter];
+    NSArray *filtered = [[brandColors.colorMap allKeys] filteredArrayUsingPredicate:predicate];
+    
+    if (filtered.count==0) {
         return BC_DEFAULT_COLOR;
     }
     
-    return [UIColor dk_colorWithHexString:bc_object.hexColor];
+    NSString *match = filtered.firstObject;
+    BrandColor *bc_object = [brandColors.colorMap objectForKey:match];
+    return [UIColor dk_colorWithHexString:bc_object.hexColor];    
 }
 
 
@@ -242,7 +247,7 @@
     BrandColors *brandcolors = [[BrandColors alloc] init];
     NSMutableArray *list = [[NSMutableArray alloc] init];
     [brandcolors.colorMap enumerateKeysAndObjectsUsingBlock:^(id key, id obj, BOOL *stop) {
-        BrandColor *brandcolor = obj;        
+        BrandColor *brandcolor = obj;
         if (isLightColor) {
             if (brandcolor.isLightColor) {
                 [list addObject:brandcolor.name];
