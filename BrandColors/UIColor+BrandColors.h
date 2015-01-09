@@ -13,21 +13,24 @@
 @interface UIColor (BrandColors)
 
 /**
- List of brands that have brand colors.
+ List of brands that have a color.
+ @return List of brands.
  */
 + (NSArray*)bc_brands;
 
 
 /**
- List of brands that have a "light" color.
+ List of brands that have a light color.
+ @return List of brands with a light color.
  */
 + (NSArray*)bc_brandsWithLightColor;
 
 
 /**
- Get color from brand name.
+ Get color from a brand name.
  Hex colors are from http://brandcolors.net
  @param brand Name of the brand (case insensitive, can ommit symbol).
+ @return Color for the brand.
  */
 + (UIColor*)bc_colorForBrand:(NSString*)brand;
 
@@ -35,10 +38,29 @@
 
 
 @interface BrandColors : NSObject
+
+
 @end
 
+
 @interface BrandColor : NSObject
+
+/**
+ Name of the brand.
+ */
 @property (nonatomic, strong) NSString *name;
+
+
+/**
+ Color of the brand in hex format.
+ */
 @property (nonatomic, strong) NSString *hexColor;
+
+
+/**
+ Boolean that specifies if the brand is of light color.
+ */
 @property (nonatomic) BOOL isLightColor;
+
+
 @end
