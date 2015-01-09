@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "BrandColors"
-  s.version      = "0.2"
+  s.version      = "0.3"
   s.summary      = "UIColor Category for Brand Colors."
   s.homepage     = "https://github.com/dkhamsing/BrandColors"
   s.screenshots  = "https://raw.githubusercontent.com/dkhamsing/BrandColors/master/Assets/screenshot.png"
@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios
 
-  s.source       = { :git => "https://github.com/dkhamsing/BrandColors.git", :tag => "0.2" }
+  s.source       = { :git => "https://github.com/dkhamsing/BrandColors.git", :tag => "0.3" }
 
   s.source_files  = "BrandColors/*"
 
