@@ -7,9 +7,11 @@
 //
 
 #import <XCTest/XCTest.h>
+#import "UIColor+BrandColors.h"
 
 @interface DemoTests : XCTestCase
-
+@property (nonatomic, strong) UIColor *facebookColor1;
+@property (nonatomic, strong) UIColor *facebookColor2;
 @end
 
 @implementation DemoTests
@@ -18,6 +20,9 @@
 {
     [super setUp];
     // Put setup code here. This method is called before the invocation of each test method in the class.
+    
+    self.facebookColor1 = [UIColor bc_colorForBrand:@"facebook"];
+    self.facebookColor2 = [UIColor bc_colorForBrand:@"Facebook"];
 }
 
 - (void)tearDown
@@ -28,7 +33,7 @@
 
 - (void)testExample
 {
-    XCTFail(@"No implementation for \"%s\"", __PRETTY_FUNCTION__);
+    XCTAssertTrue([self.facebookColor1 isEqual: self.facebookColor2]);
 }
 
 @end

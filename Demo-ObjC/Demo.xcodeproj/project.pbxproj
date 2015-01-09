@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CB051D6A1A5F91200025C9B4 /* UIColor+BrandColors.m in Sources */ = {isa = PBXBuildFile; fileRef = CED624611914521D0033A91C /* UIColor+BrandColors.m */; };
 		CED6242E191451D90033A91C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED6242D191451D90033A91C /* Foundation.framework */; };
 		CED62430191451D90033A91C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED6242F191451D90033A91C /* CoreGraphics.framework */; };
 		CED62432191451D90033A91C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CED62431191451D90033A91C /* UIKit.framework */; };
@@ -271,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CED62453191451D90033A91C /* DemoTests.m in Sources */,
+				CB051D6A1A5F91200025C9B4 /* UIColor+BrandColors.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -461,6 +463,7 @@
 				CED62458191451D90033A91C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CED62459191451D90033A91C /* Build configuration list for PBXNativeTarget "DemoTests" */ = {
 			isa = XCConfigurationList;
@@ -469,6 +472,7 @@
 				CED6245B191451D90033A91C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
