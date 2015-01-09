@@ -17,4 +17,5 @@ Pod::Spec.new do |s|
 
   s.source_files  = "BrandColors/*"
 
+  s.requires_arc = true
 end
