@@ -10,6 +10,8 @@
 
 #define BC_DEFAULT_COLOR [UIColor clearColor]
 
+
+/** Category for brand colors. */
 @interface UIColor (BrandColors)
 
 /**
@@ -37,12 +39,14 @@
 @end
 
 
+/** Class to map brand colors. */
 @interface BrandColors : NSObject
 
 
 @end
 
 
+/** Brand color class. */
 @interface BrandColor : NSObject
 
 /**
