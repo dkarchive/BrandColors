@@ -65,6 +65,7 @@
     
     [map dk_updateKey:@"500px" hexColor:@"02adea"];
     
+    [map dk_updateKey:@"about.me" hexColor:@"00405d"];
     [map dk_updateKey:@"Acer" hexColor:@"83b81a"];
     [map dk_updateKey:@"Adobe" hexColor:@"ff0000"];
     [map dk_updateKey:@"Airbnb" hexColor:@"FF5A60"];
@@ -150,6 +151,7 @@
     [map dk_updateKey:@"LINE" hexColor:@"1DCD00"];
     [map dk_updateKey:@"Lyft" hexColor:@"00B4AE"];
     [map dk_updateKey:@"Microsoft" hexColor:@"00a1f1"];
+    [map dk_updateKey:@"Mixpanel" hexColor:@"00a9d2"];
     [map dk_updateKey:@"Motorola" hexColor:@"5C92FA"];
     [map dk_updateKey:@"Mozilla" hexColor:@"C34139"];
     
@@ -172,6 +174,7 @@
     [map dk_updateKey:@"Qualcomm" hexColor:@"005daa"];
     
     [map dk_updateKey:@"Reddit" hexColor:@"cee3f8" isLightColor:YES];
+    [map dk_updateKey:@"Redfin" hexColor:@"A02021"];
     [map dk_updateKey:@"Roku" hexColor:@"662E93"];
     [map dk_updateKey:@"Rovio" hexColor:@"C02227"];
     [map dk_updateKey:@"Rdio" hexColor:@"007dc3"];
@@ -186,6 +189,7 @@
     [map dk_updateKey:@"Spotify" hexColor:@"81b71a"];
     [map dk_updateKey:@"Sprint" hexColor:@"fee100"];
     [map dk_updateKey:@"Stack Overflow" hexColor:@"ef8236"];
+    [map dk_updateKey:@"StackOverflow" hexColor:@"ef8236"];
     [map dk_updateKey:@"Staples" hexColor:@"cc0000"];
     [map dk_updateKey:@"Starbucks" hexColor:@"00704A"];
     [map dk_updateKey:@"Stripe" hexColor:@"008cdd"];
@@ -194,6 +198,7 @@
     [map dk_updateKey:@"TMobile" hexColor:@"ea0a8e"];
     [map dk_updateKey:@"Treehouse" hexColor:@"5cb868"];
     [map dk_updateKey:@"Trello" hexColor:@"256a92"];
+    [map dk_updateKey:@"Trulia" hexColor:@"5eab1f"];
     [map dk_updateKey:@"Twitch" hexColor:@"6441a5"];
     [map dk_updateKey:@"Twitter" hexColor:@"55acee"];
     [map dk_updateKey:@"Tesla" hexColor:@"CC0000"];
