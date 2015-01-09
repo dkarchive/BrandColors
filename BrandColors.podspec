@@ -1,9 +1,10 @@
 Pod::Spec.new do |s|
 
   s.name         = "BrandColors"
-  s.version      = "0.1"
+  s.version      = "0.2"
   s.summary      = "UIColor Category for Brand Colors."
-  s.screenshots  = "https://github.com/dkhamsing/BrandColors/blob/master/Assets/screenshot.png"
+  s.homepage     = "https://github.com/dkhamsing/BrandColors"
+  s.screenshots  = "https://raw.githubusercontent.com/dkhamsing/BrandColors/master/Assets/screenshot.png"
 
   s.license      = { :type => "MIT", :file => "LICENSE" }
 
