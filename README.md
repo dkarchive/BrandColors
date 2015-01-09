@@ -3,6 +3,8 @@ BrandColors
 
 UIColor Category for over 100 Brand Colors
 
+[![Build Status](https://travis-ci.org/dkhamsing/BrandColors.svg?branch=master)](https://travis-ci.org/dkhamsing/BrandColors)
+
 ![](Assets/screenshot.png)
 
 # Installation
