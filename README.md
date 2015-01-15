@@ -4,6 +4,9 @@ BrandColors
 UIColor Category for over 100 Brand Colors
 
 [![Build Status](https://travis-ci.org/dkhamsing/BrandColors.svg?branch=master)](https://travis-ci.org/dkhamsing/BrandColors)
+[![Version](https://img.shields.io/cocoapods/v/BrandColors.svg?style=flat)](http://cocoadocs.org/docsets/BrandColors)
+[![License](https://img.shields.io/cocoapods/l/BrandColors.svg?style=flat)](http://cocoadocs.org/docsets/BrandColors)
+[![Platform](https://img.shields.io/cocoapods/p/BrandColors.svg?style=flat)](http://cocoadocs.org/docsets/BrandColors)
 
 ![](Assets/screenshot.png)
 
