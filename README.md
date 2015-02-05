@@ -65,12 +65,12 @@ facebookButton.backgroundColor = UIColor.bc_colorForBrand("Facebook")
 
 println("BrandColors contains \(UIColor.bc_brands().count) brands: \(UIColor.bc_brands())")
 
-let lightColorBrands:String[] = UIColor.bc_brandsWithLightColor() as String[]
+let lightColorBrands:[String] = UIColor.bc_brandsWithLightColor() as [String]
 if ( contains(lightColorBrands,brand) ) {
-  cell.textColor = UIColor.blackColor()
+  cell.textLabel?.textColor = UIColor.blackColor()
 }  
 else {
-  cell.textColor = UIColor.whiteColor()
+  cell.textLabel?.textColor = UIColor.whiteColor()
 }
 ```
 
