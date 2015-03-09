@@ -135,4 +135,14 @@ NSString *k_date = @"k_date";
     return cell;
 }
 
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    if (cell.selected) {
+        [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    }
+    else {
+        return;
+    }
+}
+
 @end
