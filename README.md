@@ -16,7 +16,7 @@ UIColor Category for over 100 Brand Colors
 - Add the files in the BrandColors folder to your project.
 - `#import "UIColor+BrandColors.h"`
 
-## Cocoapods
+## [CocoaPods](https://cocoapods.org/)
 ```
 platform :ios, '7.0'
 pod 'BrandColors'
